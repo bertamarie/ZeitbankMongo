@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<!-- Super Container -->
+<div class="super-container full-width" id="section-thirds">
+
+	<!-- 960 Container -->
+	<div class="container">	
+		<div class="sixteen columns">
+			<div class="ten columns alpha">
+				<h3><%= @project.title %></h3>
+			
+				<div class="module">						
+					<div class="module-img">						
+						<%= image_tag(@project.image_url) %>										    
+					</div>				
+					<div class="module-meta">	
+						<p><%= @project.description%></p>
+					</div>						
+				</div>
+			</div>	
+			<div class="six columns omega">
+				<h3>Thing to do</h3>
+				<ul>
+					<li>Lala</li>
+				</ul>
+			</div>			
+		</div>
+		<%= button_to 'Add to Favourites', @project.fans.create() %>		
+		<%= link_to 'Edit', edit_project_path(@project) %>
+
+		<!-- /End 1 Columns -->
+		
+	</div>
+	<!-- /End 960 Container -->
+
+</div>
+<!-- /End Super Container -->
+
+

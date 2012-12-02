@@ -1,4 +1,7 @@
 AwsomeApp::Application.routes.draw do
+  resources :fans, :except => [:new, :edit, :update, :index, :show]
+  resources :projects
+
   #get "users/show"
 
   #get "home/index"
@@ -54,7 +57,8 @@ AwsomeApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "home#index"
+  #root :to => "home#index"
+  root to: 'home#index', as: 'home'
   devise_for :users
   resources :users
 

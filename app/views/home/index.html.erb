@@ -1,4 +1,98 @@
-<h1>Home</h1>    
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
-<% end %>  
+<!-- Super Container -->
+<div class="super-container full-width" id="section-thirds">
+
+	<!-- 960 Container -->
+	<div class="container">	
+		<div class="sixteen">
+			<h3>Latest Projects</h3>
+		</div>
+		<% @projects_last.each do |project| %>
+		<!-- 1/3 Columns -->
+		<div class="one-third column">				
+			<div class="module">						
+				<div class="module-img">
+					<%= link_to(project) do %>							
+						<%= image_tag(project.image_url) %>
+					<% end %>												    
+				</div>				
+				<div class="module-meta">
+					<%= link_to(project) do %>	
+					<h5><%= project.title%></h5>
+					<% end %>	
+					<p><%= project.description%></p>
+				</div>						
+			</div>				
+		</div>
+		<% end %>
+		<!-- /End 1/3 Columns -->
+		
+	</div>
+	<!-- /End 960 Container -->
+
+</div>
+<!-- /End Super Container -->
+
+
+<!-- ============================================== -->
+
+<!-- Super Container -->
+<div class="super-container full-width" id="section-thirds">
+
+	<!-- 960 Container -->
+	<div class="container">	
+		<div class="sixteen">
+			<h3>Most Loved Projects</h3>
+			
+		</div>
+		<% @projects_loved.each do |project| %>
+		
+		<!-- 1/3 Columns -->
+		<div class="one-third column">				
+			<div class="module">						
+				<div class="module-img">
+					<%= link_to(project) do %>							
+						<%= image_tag(project.image_url) %>
+					<% end %>												    
+				</div>				
+				<div class="module-meta">
+					<%= link_to(project) do %>	
+						<h5><%= project.title%></h5>
+					<% end %>	
+					<p><%= project.description%></p>
+					<span class="heart">&hearts;<!--&#9825;--><%= project.fans.count %></span>
+					
+					<% if (user_signed_in? && !project.fans.where(user_id: current_user.id).exists?) %>	
+						<%= button_to 'Add to Favourites', fans_path(project: project, user: current_user) %>
+					<%elsif (user_signed_in?)  %>
+						<%= fan = project.fans.where(user_id: current_user.id).first%>
+						<%= fan.id%>
+						<%= project1 = Project.where('fans._id' => fan.id).first%>
+						<%= project.id%>
+						<%= project1.id%>
+						
+						<%= button_to "delete", { :controller => :fans,
+						      :action => 'destroy',  :id => fan.id }, :method => :delete %>
+
+						<% if false%>
+								<%= link_to 'Destroy', fan, method: :delete, data: { confirm: 'Are you sure?' } %>	
+						<% end %>
+					<%else%>
+						<%= button_to 'Add to Favourites', fans_path(project: project, user: current_user) %>
+					<% end %>
+				</div>						
+			</div>				
+		</div>
+		
+		<% end %>
+		<!-- /End 1/3 Columns -->
+		
+	</div>
+	<!-- /End 960 Container -->
+
+</div>
+<!-- /End Super Container -->
+
+
+<!-- ============================================== -->
+
+
