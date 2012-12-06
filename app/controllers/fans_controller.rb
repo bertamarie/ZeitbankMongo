@@ -80,9 +80,13 @@ class FansController < ApplicationController
   # DELETE /fans/1
   # DELETE /fans/1.json
   def destroy
-    project = Project.find('fans._id' => params[:id]).first
-    fan = project.fans.find(params[:id])
-    project.fans.delete(fan)    
+    #project = Project.where('fans._id' => params[:id]).first
+    #fan = project.fans.where(params[:id])
+    #project.fans.delete(fan) 
+    project = Project.find(params[:id])
+    fan = project.fans.where(user_id: current_user.id).first
+    project.fans.delete(fan) 
+       
 
     respond_to do |format|
      format.html { redirect_to home_url, notice: 'Fan was successfully deleted.' }

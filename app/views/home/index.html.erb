@@ -60,25 +60,8 @@
 					<% end %>	
 					<p><%= project.description%></p>
 					<span class="heart">&hearts;<!--&#9825;--><%= project.fans.count %></span>
+					<%= love_unlove_button(project) %>
 					
-					<% if (user_signed_in? && !project.fans.where(user_id: current_user.id).exists?) %>	
-						<%= button_to 'Add to Favourites', fans_path(project: project, user: current_user) %>
-					<%elsif (user_signed_in?)  %>
-						<%= fan = project.fans.where(user_id: current_user.id).first%>
-						<%= fan.id%>
-						<%= project1 = Project.where('fans._id' => fan.id).first%>
-						<%= project.id%>
-						<%= project1.id%>
-						
-						<%= button_to "delete", { :controller => :fans,
-						      :action => 'destroy',  :id => fan.id }, :method => :delete %>
-
-						<% if false%>
-								<%= link_to 'Destroy', fan, method: :delete, data: { confirm: 'Are you sure?' } %>	
-						<% end %>
-					<%else%>
-						<%= button_to 'Add to Favourites', fans_path(project: project, user: current_user) %>
-					<% end %>
 				</div>						
 			</div>				
 		</div>

@@ -7,14 +7,19 @@
 	<div class="container">	
 		<div class="sixteen columns">
 			<div class="ten columns alpha">
-				<h3><%= @project.title %></h3>
+				<% project = @project%>
+				<h3><%= project.title %></h3>
 			
 				<div class="module">						
 					<div class="module-img">						
-						<%= image_tag(@project.image_url) %>										    
+						<%= image_tag(project.image_url) %>										    
 					</div>				
 					<div class="module-meta">	
-						<p><%= @project.description%></p>
+						<p><%= project.description%></p>
+						<span class="heart">&hearts;<!--&#9825;--><%= project.fans.count %></span>
+						<%= love_unlove_button(project) %>
+						<br />
+						<%= link_to 'Edit', edit_project_path(project), :class => 'button' %>
 					</div>						
 				</div>
 			</div>	
@@ -25,8 +30,8 @@
 				</ul>
 			</div>			
 		</div>
-		<%= button_to 'Add to Favourites', @project.fans.create() %>		
-		<%= link_to 'Edit', edit_project_path(@project) %>
+				
+		
 
 		<!-- /End 1 Columns -->
 		
