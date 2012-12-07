@@ -59,9 +59,8 @@
 						<h5><%= project.title%></h5>
 					<% end %>	
 					<p><%= project.description%></p>
-					<span class="heart">&hearts;<!--&#9825;--><%= project.fans.count %></span>
-					<%= love_unlove_button(project) %>
-					
+					<span class="heart">&hearts;<!--&#9825;--><%= project.likes %></span>
+					<%= love_unlove_button(project) %>					
 				</div>						
 			</div>				
 		</div>

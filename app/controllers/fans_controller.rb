@@ -48,7 +48,7 @@ class FansController < ApplicationController
      user = User.find(params[:user])
      @fan = Fan.new(user_id: user.id)
      @fan.project = project
-     #@fan = project.fans.create(user_id: user.id)
+     project.update_attribute("likes", project.likes + 1)
 
     respond_to do |format|
       if @fan.save!
@@ -85,8 +85,8 @@ class FansController < ApplicationController
     #project.fans.delete(fan) 
     project = Project.find(params[:id])
     fan = project.fans.where(user_id: current_user.id).first
-    project.fans.delete(fan) 
-       
+    project.fans.delete(fan)
+    project.update_attribute("likes", project.likes - 1)
 
     respond_to do |format|
      format.html { redirect_to home_url, notice: 'Fan was successfully deleted.' }

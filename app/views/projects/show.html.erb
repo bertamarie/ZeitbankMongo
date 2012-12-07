@@ -16,7 +16,7 @@
 					</div>				
 					<div class="module-meta">	
 						<p><%= project.description%></p>
-						<span class="heart">&hearts;<!--&#9825;--><%= project.fans.count %></span>
+						<span class="heart">&hearts;<!--&#9825;--><%= project.likes %></span>
 						<%= love_unlove_button(project) %>
 						<br />
 						<%= link_to 'Edit', edit_project_path(project), :class => 'button' %>
