@@ -86,8 +86,12 @@ img.align-right{float: right; margin: 0 0 12px 15px;}
 	}
 
 /* Custom Lists, Buttons, Tags, etc. */
-ul.square {padding: 10px;}
-a.button{text-align: center;}
+ul.square {
+	padding: 10px;
+}
+a.button{
+	text-align: center;
+}
 
 /* Form Overrides */
 input{ font-size: 11px !important; }
@@ -254,10 +258,29 @@ span.usermenu{
 
 h1.title{
 	float: left;
+	line-height: 1;
+}
+h1.title a, h1.title a:hover{
 	color: #FFF;
+	background: none;
 }
 .button_to, .button_to div{
 	display: inline;
+}
+a.button{
+	margin-bottom: 0 !important;
+}
+.module{
+	padding: 10px;
+}
+a:hover .module {
+	box-shadow: 0 0 1px 1px #888;
+}
+.module-img{
+	text-align: center;
+}
+.module-img img{
+	max-height: 200px;
 }
 
 

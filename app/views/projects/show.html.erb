@@ -24,9 +24,21 @@
 				</div>
 			</div>	
 			<div class="six columns omega">
-				<h3>Thing to do</h3>
+				<h3>Fans</h3>
 				<ul>
-					<li>Lala</li>
+					<% @fans.each do |fan| %>
+						<% user_id = fan.user_id %>
+						<% user = User.find(user_id)%>
+						<li>User ID:<%= user.id%> und Fan ID: <%= fan.id%></li>
+					<% end %>
+				</ul>
+				<h3>Categories</h3>
+				<ul>
+					<% @cats = project.categories%>
+					<% @cats.each do |cat| %>
+						<% cat = Category.find(cat.id)%>
+						<li>Cat:<%= cat.name%></li>
+					<% end %>
 				</ul>
 			</div>			
 		</div>

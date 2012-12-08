@@ -1,4 +1,7 @@
 AwsomeApp::Application.routes.draw do
+  resources :categories
+
+
   resources :fans, :except => [:new, :edit, :update, :index, :show]
   resources :projects
 

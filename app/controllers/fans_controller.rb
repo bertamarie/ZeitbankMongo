@@ -42,8 +42,7 @@ class FansController < ApplicationController
   # POST /fans
   # POST /fans.json
   
-  def create
-    
+  def create  
      project = Project.find(params[:project])
      user = User.find(params[:user])
      @fan = Fan.new(user_id: user.id)
@@ -65,7 +64,6 @@ class FansController < ApplicationController
   # PUT /fans/1.json
   def update
     @fan = Fan.find(params[:id])
-
     respond_to do |format|
       if @fan.update_attributes(params[:fan])
         format.html { redirect_to @fan, notice: 'Fan was successfully updated.' }
@@ -80,9 +78,6 @@ class FansController < ApplicationController
   # DELETE /fans/1
   # DELETE /fans/1.json
   def destroy
-    #project = Project.where('fans._id' => params[:id]).first
-    #fan = project.fans.where(params[:id])
-    #project.fans.delete(fan) 
     project = Project.find(params[:id])
     fan = project.fans.where(user_id: current_user.id).first
     project.fans.delete(fan)

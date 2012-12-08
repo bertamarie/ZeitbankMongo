@@ -8,20 +8,18 @@
 		</div>
 		<% @projects_last.each do |project| %>
 		<!-- 1/3 Columns -->
-		<div class="one-third column">				
+		<div class="one-third column">
+			<%= link_to(project) do %>					
 			<div class="module">						
-				<div class="module-img">
-					<%= link_to(project) do %>							
-						<%= image_tag(project.image_url) %>
-					<% end %>												    
+				<div class="module-img">									
+					<%= image_tag(project.image_url) %>											    
 				</div>				
 				<div class="module-meta">
-					<%= link_to(project) do %>	
-					<h5><%= project.title%></h5>
-					<% end %>	
+					<h5><%= project.title%></h5>					
 					<p><%= project.description%></p>
 				</div>						
-			</div>				
+			</div>	
+			<% end %>			
 		</div>
 		<% end %>
 		<!-- /End 1/3 Columns -->
@@ -47,22 +45,20 @@
 		<% @projects_loved.each do |project| %>
 		
 		<!-- 1/3 Columns -->
-		<div class="one-third column">				
+		<div class="one-third column">	
+			<%= link_to(project) do %>			
 			<div class="module">						
 				<div class="module-img">
-					<%= link_to(project) do %>							
-						<%= image_tag(project.image_url) %>
-					<% end %>												    
+					<%= image_tag(project.image_url) %>													    
 				</div>				
 				<div class="module-meta">
-					<%= link_to(project) do %>	
-						<h5><%= project.title%></h5>
-					<% end %>	
+					<h5><%= project.title%></h5>
 					<p><%= project.description%></p>
 					<span class="heart">&hearts;<!--&#9825;--><%= project.likes %></span>
 					<%= love_unlove_button(project) %>					
 				</div>						
-			</div>				
+			</div>
+			<% end %>				
 		</div>
 		
 		<% end %>

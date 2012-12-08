@@ -23,6 +23,12 @@
     <%= f.label :image_url %><br />
     <%= f.text_field :image_url %>
   </div>
+  <div class="checkbox-list">
+	<% @categories = Category.all%>
+	<% @categories.each do |category|%>
+		<%= check_box_tag "category_ids[]", category.id %> <%= category.name %>
+	<% end %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
