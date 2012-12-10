@@ -1,7 +1,5 @@
-<p id="notice"><%= notice %></p>
-
 <!-- Super Container -->
-<div class="super-container full-width" id="section-thirds">
+<div class="super-container full-width">
 
 	<!-- 960 Container -->
 	<div class="container">	
@@ -16,7 +14,7 @@
 					</div>				
 					<div class="module-meta">	
 						<p><%= project.description%></p>
-						<span class="heart">&hearts;<!--&#9825;--><%= project.likes %></span>
+						<span class="heart">&hearts; <%=project.likes%></span>
 						<%= love_unlove_button(project) %>
 						<br />
 						<%= link_to 'Edit', edit_project_path(project), :class => 'button' %>
@@ -29,7 +27,7 @@
 					<% @fans.each do |fan| %>
 						<% user_id = fan.user_id %>
 						<% user = User.find(user_id)%>
-						<li>User ID:<%= user.id%> und Fan ID: <%= fan.id%></li>
+						<li><%= user.name%></li>
 					<% end %>
 				</ul>
 				<h3>Categories</h3>
@@ -37,19 +35,14 @@
 					<% @cats = project.categories%>
 					<% @cats.each do |cat| %>
 						<% cat = Category.find(cat.id)%>
-						<li>Cat:<%= cat.name%></li>
+						<li><%= link_to cat.name, cat %></li>
 					<% end %>
 				</ul>
 			</div>			
 		</div>
-				
-		
-
-		<!-- /End 1 Columns -->
-		
+		<!-- /End 1 Columns -->		
 	</div>
 	<!-- /End 960 Container -->
-
 </div>
 <!-- /End Super Container -->
 

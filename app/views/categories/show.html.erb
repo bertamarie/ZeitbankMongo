@@ -1,10 +1,9 @@
-<p id="notice"><%= notice %></p>
+<!-- 960 Container -->
+<div class="container project_preview_container">	
+	<%= render :partial => 'category_overview', :locals => {:category => @category} %>
+	<div class="sixteen columns">	
+		<%= link_to 'Browse all Categories', categories_path %>	
+	</div>
+</div>
 
-<p>
-  <b>Name:</b>
-  <%= @category.name %>
-</p>
 
-
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>

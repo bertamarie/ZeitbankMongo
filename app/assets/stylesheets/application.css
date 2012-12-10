@@ -254,6 +254,7 @@ ul.square, ul.circle, ul.disc {
 
 span.usermenu{
 	float: right;
+	text-align: right;
 }
 
 h1.title{
@@ -270,17 +271,35 @@ h1.title a, h1.title a:hover{
 a.button{
 	margin-bottom: 0 !important;
 }
-.module{
+
+/*Project Preview */
+.project_preview_container{
+	margin-top: 30px !important;
+}
+.project_preview {
+	border: 1px solid #ccc;
+	border-radius: 5px;
 	padding: 10px;
 }
-a:hover .module {
-	box-shadow: 0 0 1px 1px #888;
+a:hover .project_preview {
+	box-shadow: 0 0 5px 0 #ccc;
 }
-.module-img{
+.project_preview .module-title{
+	height: 30px;
+	overflow: hidden;
+}
+.project_preview .module-description{
+	height: 70px;
+	overflow: hidden;
+}
+.project_preview .module-img{
+	height: 150px;
 	text-align: center;
 }
-.module-img img{
-	max-height: 200px;
+.project_preview .module-img img{
+	max-height: 150px;
 }
+
+
 
 

@@ -1,0 +1,8 @@
+<% if (user_signed_in? && !project.fans.where(user_id: current_user.id).exists?) %>	
+	<%= button_to 'Love', fans_path(project: project, user: current_user) %>
+<%elsif (user_signed_in?) %>
+	<%= button_to "Unlove", { :controller => :fans,
+	      :action => 'destroy',  :id => project.id }, :method => :delete %>
+<%else%>
+	<%= button_to 'Love', fans_path(project: project, user: current_user) %>
+<%end%>

@@ -3,8 +3,9 @@
 <head>
   <title>AwsomeApp</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <%= javascript_include_tag "jquery-1.8.3.min.js", "rails.js" %>
+  
 </head>
 <body>
   
@@ -20,8 +21,9 @@
 	<!-- 960 Container -->
 	<div class="container">			
 		<div class="sixteen columns">
-			<h1 class="title"><%= link_to('Zeit und Zeug', home_url) %></h1>
-			<span class="usermenu"><%= render 'shared/navigation' %></span>
+			<h1 class="title cloumns eight alpha"><%= link_to('Zeit und Zeug', home_url) %></h1>
+			<span class="columns two"><%= link_to('Explore', categories_path, :class => 'button') %></span>
+			<span class="usermenu columns six omega"><%= render 'users/user_navigation' %></span>
 		</div>		
 	</div>	
 </div>
