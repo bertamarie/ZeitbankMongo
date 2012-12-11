@@ -10,7 +10,7 @@ body{
 
 a{color: #ee7727; text-decoration: none;}
 a:hover{opacity: 0.8; color: #444;}
-a:hover .module {opacity: 1;}
+a:hover .project {opacity: 1;}
 
 			
 /* Headline Text */	 

@@ -64,6 +64,12 @@ class ProjectsController < ApplicationController
   # PUT /projects/1.json
   def update
     @project = Project.find(params[:id])
+    @project.categories = nil
+    @cat_ids = params[:category_ids]
+    @cat_ids.each do |cat_id|
+      cat = Category.find(cat_id)
+      cat.projects << @project
+    end
 
     respond_to do |format|
       if @project.update_attributes(params[:project])

@@ -13,7 +13,7 @@
 						<span class="love_counter"><%= render :partial => 'shared/love_counter', :locals => {:project => project} %></span>
 						<span class="love_unlove"><%= render :partial => 'shared/love_unlove_button', :locals => {:project => project} %></span>
 						<span class="project_categories">	
-							<% @cats = project.categories%>
+							<% @cats = project.categories.asc(:name)%>
 							<%if(@cats.size <= 1)%>
 								 Category: 
 							<% else %>

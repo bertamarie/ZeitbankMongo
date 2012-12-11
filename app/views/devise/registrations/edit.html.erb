@@ -1,7 +1,7 @@
 <div class="container">
-	<div class="columns six">
+	<div class="columns six user_form">
 		<h3>Edit <%= resource_name.to_s.humanize %></h3>
-
+		
 		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
 		  <%= devise_error_messages! %> 
 		  <div>
@@ -21,13 +21,10 @@
 		  	<%= f.password_field :password_confirmation %>
 		  </div>
 		  <div>
-			<%= f.label :current_password %> <span class="small">we need your current password to confirm your changes</span>
+			<%= f.label :current_password %> <span class="small">confirm your changes with your current password</span>
 		  	<%= f.password_field :current_password %>
 		  </div>
 		  <div><%= f.submit "Update" %></div>
 		<% end %>
-		<h3>Cancel my account</h3>
-		<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete %>.</p>
-		<%= link_to "Back", :back %>
 	</div>
 </div>

@@ -276,16 +276,59 @@ h3{
 	margin-top: 30px !important;
 }
 
+/* ======================================================= */
+/*			Love and Unlove Buttons 					   */
+/* ======================================================= */
 .love, .unlove{
 	font-size: 1.3em !important;
 }
 .unlove{
 	text-decoration: line-through !important;
 }
+
 /* ======================================================= */
-/*			Project Preview 								   */
+/*			Project and User Forms 						   */
+/* ======================================================= */
+.user_form, .project_form{
+	margin: 20px 0 !important;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+}
+.user_form form, .user_form h3{
+	width: 220px;
+	margin: 0 auto;
+}
+
+#user_remember_me{
+	float: left;
+}
+
+.project_form form{
+	width: 100%;
+	margin: 0 auto;	
+}
+.project_form input[type="text"], 
+.project_form input[type="password"], 
+.project_form input[type="email"], 
+.project_form textarea, 
+.project_form select {
+	width: 90%;
+	margin: 0 auto;	
+}
+.project_form h3,
+.project_form label{
+	margin-left: 4.2%;	
+}
+.project_form .actions,
+.project_form .checkbox-list{
+	margin-left: 3.3%;	
+}
+/* ======================================================= */
+/*			Project Preview 							   */
 /* ======================================================= */
 .project_preview {
+	margin: 20px 0 !important;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	padding: 10px;
