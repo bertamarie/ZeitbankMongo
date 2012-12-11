@@ -43,16 +43,16 @@ class FansController < ApplicationController
   # POST /fans.json
   
   def create  
-     project = Project.find(params[:project])
+     @project = Project.find(params[:project])
      user = User.find(params[:user])
      @fan = Fan.new(user_id: user.id)
-     @fan.project = project
-     project.update_attribute("likes", project.likes + 1)
+     @fan.project = @project
+     @project.update_attribute("likes", @project.likes + 1)
 
     respond_to do |format|
       if @fan.save!
-        format.html { redirect_to home_url notice: 'Fan was successfully created.' }
         format.js
+        format.html { redirect_to home_url notice: 'Fan was successfully created.' }
         format.json { render json: @fan, status: :created, location: @fan }
       else
         format.html { render action: "new" }
@@ -79,12 +79,13 @@ class FansController < ApplicationController
   # DELETE /fans/1
   # DELETE /fans/1.json
   def destroy
-    project = Project.find(params[:id])
-    fan = project.fans.where(user_id: current_user.id).first
-    project.fans.delete(fan)
-    project.update_attribute("likes", project.likes - 1)
+    @project = Project.find(params[:id])
+    fan = @project.fans.where(user_id: current_user.id).first
+    @project.fans.delete(fan)
+    @project.update_attribute("likes", @project.likes - 1)
 
     respond_to do |format|
+     format.js
      format.html { redirect_to home_url, notice: 'Fan was successfully deleted.' }
      format.json { head :no_content }
     end

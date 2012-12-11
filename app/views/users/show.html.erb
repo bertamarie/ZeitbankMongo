@@ -1,8 +1,17 @@
-<h1>Users</h1>
-<p>User: <%= @user.name %></p>
-<h3>Favourites</h3>
-<ul>
-	<% @projects.each do |project| %>		
-		<li><%= project.title%></li>
-	<% end %>
-</ul>
+<div class="container project_preview_container">	
+	<div class="sixteen columns">
+		<h3><%= @user.name %>
+			<% if user_signed_in? && current_user.name == @user.name %>
+			  <%= link_to('Edit account', edit_user_registration_path, :class => 'button' )%>
+			<% end %>
+		</h3>
+	</div>
+	<div class="sixteen columns">
+		<h3>Favourites</h3>
+	</div>
+	<% @projects.each do |project| %>
+	<div class="four columns">
+		<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
+	</div>
+	<% end %>		
+</div>

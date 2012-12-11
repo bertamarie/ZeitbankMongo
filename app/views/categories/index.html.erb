@@ -13,6 +13,11 @@
 						<h3><%= category.name %></h3>
 					</div>		
 					<% category_projects.each do |project| %>
+					<!-- Delete all fans and likes -->
+					<% if false %>
+						<% project.fans = nil %>
+						<% project.update_attribute("likes", 0) %>
+					<% end %>
 						<div class="four columns">
 								<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
 						</div>

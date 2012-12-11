@@ -78,7 +78,7 @@ img.align-right{float: right; margin: 0 0 12px 15px;}
 
 
 /* #Global Transitions */
-.column, .columns, .row, .module-img img, .sf-menu li, .sf-menu a, a.header-advert img, a.sidebar-advert img {
+.column, .columns, .row, .project-img img, .sf-menu li, .sf-menu a, a.header-advert img, a.sidebar-advert img {
   	   -moz-transition: all .2s ease-in-out;
 	-webkit-transition: all .2s ease-in-out;
 	     -o-transition: all .2s ease-in-out;
@@ -272,32 +272,65 @@ a.button{
 	margin-bottom: 0 !important;
 }
 
-/*Project Preview */
-.project_preview_container{
+h3{
 	margin-top: 30px !important;
 }
+
+.love, .unlove{
+	font-size: 1.3em !important;
+}
+.unlove{
+	text-decoration: line-through !important;
+}
+/* ======================================================= */
+/*			Project Preview 								   */
+/* ======================================================= */
 .project_preview {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	padding: 10px;
 }
 a:hover .project_preview {
-	box-shadow: 0 0 5px 0 #ccc;
+	box-shadow: 0 0 6px 1px #ccc;
 }
-.project_preview .module-title{
+.project_preview .project-title{
 	height: 30px;
 	overflow: hidden;
 }
-.project_preview .module-description{
+.project_preview .project-description{
 	height: 70px;
 	overflow: hidden;
 }
-.project_preview .module-img{
+.project_preview .project-img{
 	height: 150px;
 	text-align: center;
 }
-.project_preview .module-img img{
+.project_preview .project-img img{
 	max-height: 150px;
+}
+/* ======================================================= */
+/*			Project View 								   */
+/* ======================================================= */
+.project_view .project-img{
+	border: solid 1px #ccc;
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 15px 15px 10px 15px;
+}
+.project_view .project-img img{
+	height: 100%;
+}
+.project_view .project-meta .project-description{
+	text-align: justify;
+}
+
+.project_view .project-meta .project_categories{
+	margin-left: 15px;
+	padding-left: 15px;
+	border-left: 1px solid #ccc;
+}
+.project_view .project-meta .project_edit{
+	float: right;
 }
 
 

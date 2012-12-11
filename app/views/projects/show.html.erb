@@ -1,49 +1,51 @@
-<!-- Super Container -->
-<div class="super-container full-width">
-
 	<!-- 960 Container -->
 	<div class="container">	
 		<div class="sixteen columns">
 			<div class="ten columns alpha">
 				<% project = @project%>
-				<h3><%= project.title %></h3>
-			
-				<div class="module">						
-					<div class="module-img">						
+				<div class="project <%= project.id %> project_view">
+					<h3 class="project-title"><%= project.title %></h3>					
+					<div class="project-img">						
 						<%= image_tag(project.image_url) %>										    
 					</div>				
-					<div class="module-meta">	
-						<p><%= project.description%></p>
-						<span class="heart">&hearts; <%=project.likes%></span>
-						<%= love_unlove_button(project) %>
-						<br />
-						<%= link_to 'Edit', edit_project_path(project), :class => 'button' %>
+					<div class="project-meta">	
+						<p class="project-description"><%= project.description%></p>
+						<span class="love_counter"><%= render :partial => 'shared/love_counter', :locals => {:project => project} %></span>
+						<span class="love_unlove"><%= render :partial => 'shared/love_unlove_button', :locals => {:project => project} %></span>
+						<span class="project_categories">	
+							<% @cats = project.categories%>
+							<%if(@cats.size <= 1)%>
+								 Category: 
+							<% else %>
+							     Categories: 
+							<% end %>
+							<% @cats.each do |cat| %>
+								<% cat = Category.find(cat.id)%>
+								<%= link_to cat.name, cat %>
+							<% end %>
+						</span>
+						<span class="project_edit">
+							<%= link_to 'Edit', edit_project_path(project), :class => 'button' %>
+						</span>
 					</div>						
 				</div>
-			</div>	
-			<div class="six columns omega">
+				
 				<h3>Fans</h3>
 				<ul>
 					<% @fans.each do |fan| %>
 						<% user_id = fan.user_id %>
 						<% user = User.find(user_id)%>
-						<li><%= user.name%></li>
+						<li><%= link_to user.name, user_path(user) %></li>
 					<% end %>
 				</ul>
-				<h3>Categories</h3>
-				<ul>
-					<% @cats = project.categories%>
-					<% @cats.each do |cat| %>
-						<% cat = Category.find(cat.id)%>
-						<li><%= link_to cat.name, cat %></li>
-					<% end %>
-				</ul>
+			</div>	
+		
+			<div class="six columns omega">
+				<h3>Things to do</h3>
 			</div>			
 		</div>
 		<!-- /End 1 Columns -->		
 	</div>
 	<!-- /End 960 Container -->
-</div>
-<!-- /End Super Container -->
 
 

@@ -1,13 +1,13 @@
 <%= link_to(project) do %>					
-<div class="module project_preview">						
-	<div class="module-img">									
+<div class="project <%= project.id %> project_preview">					
+	<div class="project-img">									
 		<%= image_tag(project.image_url) %>											    
 	</div>				
-	<div class="module-meta">
-		<h5 class="module-title"><%= project.title%></h5>					
-		<p class="module-description"><%= project.description%></p>				
+	<div class="project-meta">
+		<h5 class="project-title"><%= project.title%></h5>					
+		<p class="project-description"><%= project.description%></p>				
 	</div>	
-	<span class="love_counter"><%= render :partial => 'shared/love_counter', :locals => {:project => project} %></span>
+	<span class="love_counter"><%= render :partial => 'shared/love_counter', :locals => {:@project => project} %></span>
 	<span class="love_unlove"><%= render :partial => 'shared/love_unlove_button', :locals => {:project => project} %></span>							
 </div>	
 <% end %>
