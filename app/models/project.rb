@@ -5,6 +5,7 @@ class Project
   field :description, type: String
   field :image_url, type: String
   field :likes, type: Integer, default: 0
+  field :owner, type: String
   embeds_many :fans
   has_and_belongs_to_many :categories
 end

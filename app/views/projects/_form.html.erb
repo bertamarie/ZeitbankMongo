@@ -28,6 +28,7 @@
 		<%= check_box_tag "category_ids[]", category.id, @project.category_ids.include?(category.id) %> <%= category.name %>
 	<% end %>
   </div>
+  <%= f.hidden_field :owner, :value => current_user.id %>
   <br />
   <div class="actions">
     <%= f.submit %>

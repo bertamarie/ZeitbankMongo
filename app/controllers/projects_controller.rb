@@ -1,4 +1,6 @@
 class ProjectsController < ApplicationController
+  before_filter :authenticate_user!, :except => [:show]
+  
   # GET /projects
   # GET /projects.json
   

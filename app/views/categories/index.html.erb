@@ -18,9 +18,9 @@
 						<% project.fans = nil %>
 						<% project.update_attribute("likes", 0) %>
 					<% end %>
-						<div class="four columns">
-								<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
-						</div>
+					<div class="four columns">
+							<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
+					</div>
 					<% end %>
 				<% end %>
 			<% end %>
