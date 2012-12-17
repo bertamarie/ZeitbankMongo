@@ -1,7 +1,7 @@
 <% if (user_signed_in? && @project.owner != current_user.id.to_s) %>        
-	<% if @project.fans.include?(current_user.id.to_s) %>
-		<%= button_to raw(" unlike "), :controller => 'projects', :action => 'unlike', :id => @project.id, :class => 'love' %> 
+	<% if @project.fans != nil && @project.fans.include?(current_user.id.to_s) %>
+		<%= button_to raw(" &hearts; "), {:controller => 'projects', :action => 'unlike', :id => @project.id}, :class => 'unlove' %> 
 	<% else %>
-		<%= button_to raw(" like "), :controller => 'projects', :action => 'like', :id => @project.id, :class => 'unlove' %>
+		<%= button_to raw(" &hearts; "), {:controller => 'projects', :action => 'like', :id => @project.id}, :class => 'love' %>
     <% end %>  
 <%end%>
