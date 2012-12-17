@@ -13,9 +13,10 @@
 						<h3><%= category.name %></h3>
 					</div>		
 					<% category_projects.each do |project| %>
-					<!-- Delete all fans and likes -->
+					<!-- Delete all fans, supporter and likes -->
 					<% if false %>
 						<% project.fans = nil %>
+						<% project.supporter = nil %>
 						<% project.update_attribute("likes", 0) %>
 					<% end %>
 					<div class="four columns">

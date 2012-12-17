@@ -7,6 +7,7 @@
 		<h5 class="project-title"><%= project.title%></h5>					
 		<p class="project-description"><%= project.description%></p>				
 	</div>	
+
 	<span class="love_counter"><%= render :partial => 'shared/love_counter', :locals => {:@project => project} %></span>
 	<span class="love_unlove"><%= render :partial => 'shared/love_unlove_button', :locals => {:project => project} %></span>							
 </div>	
