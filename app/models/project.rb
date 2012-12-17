@@ -6,6 +6,7 @@ class Project
   field :image_url, type: String
   field :likes, type: Integer, default: 0
   field :owner, type: String
+  field :supporter, type: Array
   embeds_many :fans
   has_and_belongs_to_many :categories
 end

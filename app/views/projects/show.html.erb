@@ -24,13 +24,30 @@
 								<%= link_to cat.name, cat %>
 							<% end %>
 						</span>
-						<% if project.owner == current_user.id.to_s%>
-							<span class="project_edit">
-								<%= link_to 'Edit', edit_project_path(project), :class => 'button' %>
-							</span>
+						<% if user_signed_in? %>
+							<% if project.owner == current_user.id.to_s%>
+								<span class="project_edit">
+									<%= link_to 'Edit', edit_project_path(project), :class => 'button' %>
+								</span>
+							<% end %>
 						<% end %>
-					</div>						
+					</div>    							
 				</div>
+				
+				<h3>Supporter</h3>
+				<ul>
+					<% if project.supporter != nil%>
+						<% project.supporter.each do |supporter| %>
+							<% user = User.find(supporter)%>
+							<li><%= link_to user.name, user_path(user) %></li>
+						<% end %>
+					<% end %>
+				</ul>
+				<% if user_signed_in? %>
+					<% if (project.owner != current_user.id.to_s)%>
+						<%= link_to "Support!",  :controller => "projects", :action => "add_supporter", :id => project.id, :class => 'button' %>
+					<% end %>
+				<% end %>
 				
 				<h3>Fans</h3>
 				<ul>
@@ -39,9 +56,9 @@
 						<% user = User.find(user_id)%>
 						<li><%= link_to user.name, user_path(user) %></li>
 					<% end %>
-				</ul>
-			</div>	
-		
+				</ul>		
+			</div>
+				
 			<div class="six columns omega">
 				<h3>Things to do</h3>
 				<h3>Owner</h3>

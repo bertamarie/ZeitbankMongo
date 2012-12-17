@@ -281,11 +281,17 @@ h3{
 /* ======================================================= */
 .love, .unlove{
 	font-size: 1.3em !important;
+	margin-bottom: 0 !important;
 }
+
 .unlove{
 	text-decoration: line-through !important;
 }
 
+.love_counter{
+	display: inline-block;
+	padding: 10px 0;
+}
 /* ======================================================= */
 /*			Project and User Forms 						   */
 /* ======================================================= */

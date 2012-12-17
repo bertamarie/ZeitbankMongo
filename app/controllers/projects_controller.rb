@@ -1,6 +1,18 @@
 class ProjectsController < ApplicationController
   before_filter :authenticate_user!, :except => [:show]
   
+  # GET
+  def add_supporter
+    @project = Project.find(params[:id])  
+    @user = current_user;   
+    @project.add_to_set(:supporter, @user.id.to_s)   
+    
+    respond_to do |format|
+      format.html { redirect_to @project, notice: 'Supporter was successfully added.' }
+      format.json { render json: @project }
+    end
+  end
+  
   # GET /projects
   # GET /projects.json
   
