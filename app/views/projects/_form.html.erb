@@ -21,6 +21,10 @@
   <div class="field">
     <%= f.label :image_url %>
     <%= f.text_field :image_url %>
+  </div>  
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
   </div>
   <div class="checkbox-list">
 	<% @categories = Category.all.asc(:name)%>

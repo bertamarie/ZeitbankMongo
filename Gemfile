@@ -19,6 +19,7 @@ gem "factory_girl_rails", ">= 4.0.0", :group => [:development, :test]
 gem "devise", ">= 2.1.2"  
 gem "nokogiri", ">=1.5.5"
 gem "skeleton-rails"
+gem "mongoid-paperclip", "~> 0.0.8", :require => "mongoid_paperclip"
 
 group :test do
   gem 'cucumber-rails' , '>=1.3.0'

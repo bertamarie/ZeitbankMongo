@@ -1,16 +1,25 @@
 class User
   include Mongoid::Document
+  include Mongoid::Paperclip
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+         
+  has_mongoid_attached_file :image,
+              :styles => { :thumb  => "50x50#",
+                           :small  => "150x150>",
+                           :medium => "300x200>",
+                           :large  => "600x600>"   },
+               :path => ":rails_root/public/assets/users/:id/:style/:filename",
+               :url => "/assets/users/:id/:style/:filename",
+               :default_url => "users/default/:style/default.png"
 
-  ## Database authenticatable   
-  field :name
+  ## Database authenticatable ield :name
   validates_presence_of :name
   validates_uniqueness_of :name, :email, :case_sensitive => false
-  attr_accessible :name, :email, :password, :password_confirmation, :remember_me
+  attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :image
   
   field :email,              :type => String, :default => ""
   field :encrypted_password, :type => String, :default => ""

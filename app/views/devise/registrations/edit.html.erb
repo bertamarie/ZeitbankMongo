@@ -13,6 +13,10 @@
 		  	<%= f.email_field :email %>
 		  </div>
 		  <div>
+			<%= f.label :image %>
+		  	<%= f.file_field :image %>
+		  </div>
+		  <div>
 			<%= f.label :password %> <span class="small">leave blank if you don't want to change it</span>
 		  	<%= f.password_field :password, :autocomplete => "off" %>
 		  </div>
