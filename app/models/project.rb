@@ -16,7 +16,7 @@ class Project
   field :description, type: String   
   field :likes, type: Integer, default: 0
   field :owner, type: String
-  field :supporter, type: Array
-  embeds_many :fans
+  field :supporter, type: Array     
+  field :fans, type: Array       
   has_and_belongs_to_many :categories
 end

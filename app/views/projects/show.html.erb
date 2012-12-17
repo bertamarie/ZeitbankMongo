@@ -43,28 +43,35 @@
 						<% end %>
 					<% end %>
 				</ul>
-				<% if user_signed_in? %>
-					<% if (project.owner != current_user.id.to_s)%>
+				<% if user_signed_in? %>   
+					<% if (project.owner != current_user.id.to_s)%>  
+					   
 						<%= link_to "Support!",  :controller => "projects", :action => "add_supporter", :id => project.id, :class => 'button' %>
 					<% end %>
-				<% end %>
-				
+				<% end %>    
+  
+				 <% if false%>   
 				<h3>Fans</h3>
 				<ul>
+				  
 					<% @fans.each do |fan| %>
 						<% user_id = fan.user_id %>
 						<% user = User.find(user_id)%>
 						<li><%= link_to user.name, user_path(user) %></li>
-					<% end %>
-				</ul>		
+					<% end %>  
+				  
+				</ul> 
+				<% end %>     	
 			</div>
-				
+			 
+		  <% if false%>    
 			<div class="six columns omega">
 				<h3>Things to do</h3>
 				<h3>Owner</h3>
 				<% owner = User.find(project.owner)%>
 				<p><%= link_to owner.name, user_path(owner) %></p>
-			</div>			
+			</div> 
+			<% end %> 
 		</div>
 		<!-- /End 1 Columns -->		
 	</div>

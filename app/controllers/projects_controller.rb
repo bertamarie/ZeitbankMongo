@@ -11,6 +11,32 @@ class ProjectsController < ApplicationController
       format.html { redirect_to @project, notice: 'Supporter was successfully added.' }
       format.json { render json: @project }
     end
+  end   
+  
+  # GET 
+  def like
+     @project = Project.find(params[:id])
+     @project.update_attribute("likes", @project.likes + 1)  
+     @user = current_user
+     @project.add_to_set(:fans, @user.id.to_s)    
+     
+     respond_to do |format|
+       format.html { redirect_to @project, notice: 'Fan was successfully added.' }
+       format.json { render json: @project }
+     end
+  end 
+  
+  # GET 
+  def unlike
+     @project = Project.find(params[:id])
+     @project.update_attribute("likes", @project.likes - 1)  
+     @user = current_user
+     @project.pull(:fans, @user.id.to_s)  
+     
+     respond_to do |format|
+       format.html { redirect_to @project, notice: 'Fan was successfully added.' }
+       format.json { render json: @project }
+     end
   end
   
   # GET /projects
@@ -72,13 +98,13 @@ class ProjectsController < ApplicationController
         format.json { render json: @project.errors, status: :unprocessable_entity }
       end
     end
-  end
+  end   
 
   # PUT /projects/1
   # PUT /projects/1.json
   def update
     @project = Project.find(params[:id])
-    @project.categories = nil
+    @project.categories = nil   
     @cat_ids = params[:category_ids]
     @cat_ids.each do |cat_id|
       cat = Category.find(cat_id)

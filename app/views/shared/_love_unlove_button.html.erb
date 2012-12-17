@@ -1,8 +1,7 @@
-<% if (user_signed_in? && @project.owner != current_user.id.to_s) %>
-	<% if (!@project.fans.where(user_id: current_user.id).exists?)%>	
-		<%= button_to raw(' &hearts; '), fans_path(project: @project, user: current_user), :class => 'love', :remote => true %>
-	<%else %>
-		<%= button_to raw(' &hearts; '), { :controller => :fans,
-		      :action => 'destroy',  :id => @project.id }, :method => :delete, :class => 'unlove', :remote => true %>
-	<%end%>
+<% if (user_signed_in? && @project.owner != current_user.id.to_s) %>        
+	<% if @project.fans.include?(current_user.id.to_s) %>
+		<%= button_to raw(" unlike "), :controller => 'projects', :action => 'unlike', :id => @project.id, :class => 'love' %> 
+	<% else %>
+		<%= button_to raw(" like "), :controller => 'projects', :action => 'like', :id => @project.id, :class => 'unlove' %>
+    <% end %>  
 <%end%>
