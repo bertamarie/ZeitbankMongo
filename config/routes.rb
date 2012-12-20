@@ -1,9 +1,11 @@
 AwsomeApp::Application.routes.draw do
+
   resources :categories
-  resources :fans, :except => [:new, :edit, :update, :index, :show]
   resources :projects
   devise_for :users
   resources :users
+  resources :tasks
+
 
   #get "users/show"
   #get "home/index"
@@ -66,5 +68,6 @@ AwsomeApp::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
   match '/users/:id', :to => 'users#show', :as => 'user'
+  match '/tasks/new/:id', :to => 'tasks#new', :as => 'task'
   match ':controller(/:action(/:id))'
 end

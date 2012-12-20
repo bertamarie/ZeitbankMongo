@@ -19,4 +19,5 @@ class Project
   field :supporter, type: Array     
   field :fans, type: Array       
   has_and_belongs_to_many :categories
+  embeds_many :tasks
 end

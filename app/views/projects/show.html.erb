@@ -39,32 +39,69 @@
 					<% if project.supporter != nil%>
 						<% project.supporter.each do |supporter| %>
 							<% user = User.find(supporter)%>
-							<li><%= link_to user.name, user_path(user) %></li>
+							<li>
+								<%= link_to(user_path(user)) do%>
+								<%=image_tag(user.image(:thumb)) %><br />
+								<%= user.name%>
+								<% end %>
+							</li>
 						<% end %>
 					<% end %>
-				</ul>
-				<% if user_signed_in? %>   
-					<% if (project.owner != current_user.id.to_s)%>  	   
-						<%= link_to "Support!",  :controller => "projects", :action => "add_supporter", :id => project.id, :class => 'button' %>
-					<% end %>
-				<% end %>    
-   
+				</ul> 
+ 
 				<h3>Fans</h3>
 				<ul>  
 					<% if project.fans != nil%>
 						<% project.fans.each do |fan| %>
 							<% user = User.find(fan)%>
-							<li><%= link_to user.name, user_path(user) %></li>
+							<li>
+								<%= link_to(user_path(user)) do%>
+								<%=image_tag(user.image(:thumb)) %><br />
+								<%= user.name%>
+								<% end %>
+							</li>
 						<% end %>
 					<% end %>		  
 				</ul>     	
-			</div>
-			    
+			</div>   
 			<div class="six columns omega">
 				<h3>Things to do</h3>
+				<dl>
+				<% if project.tasks != nil%>
+					<% project.tasks.each do |task| %>
+						<dt><%= task.title %></dt> 
+						<dd>
+							<%= task.description %><br />
+							status: <%= task.status %> <br />
+							taken on by: 
+							<% if task.owner != nil %>
+							<% owner = User.find(task.owner)%>
+							<%= link_to owner.name, user_path(owner) %>
+							<% else %>
+							Nobody
+							<% end %>
+							<% if user_signed_in? %>  
+								<% if (project.owner != current_user.id.to_s && task.status != "taken")%> 
+									<br /><%= link_to "That's my task!", { :controller => "projects", :action => "add_supporter", :id => project.id, :task_id => task.id}, :class => 'button' %>	
+								<% end %>
+							<% end %>		
+						</dd>
+					<% end %>
+				<% end %>
+				</dl>
+					<% if user_signed_in? %>   
+						<% if (project.owner == current_user.id.to_s)%>
+						<%= link_to "Add Task", task_path(project) %>
+						<% end %>
+					<% end%>
 				<h3>Owner</h3>
-				<% owner = User.find(project.owner)%>
-				<p><%= link_to owner.name, user_path(owner) %></p>
+				<% user = User.find(project.owner)%>
+				<p>
+					<%= link_to(user_path(user)) do%>
+					<%=image_tag(user.image(:thumb)) %><br />
+					<%= user.name%>
+					<% end %>
+				</p>
 			</div> 
 		</div>
 		<!-- /End 1 Columns -->		
