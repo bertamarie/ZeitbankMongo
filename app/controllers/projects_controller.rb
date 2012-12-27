@@ -47,7 +47,8 @@ class ProjectsController < ApplicationController
   # GET /projects.json
   
   def index
-    @projects = Project.all
+    #@projects = Project.all
+    @projects = Project.search(params)
 
     respond_to do |format|
       format.html # index.html.erb

@@ -2,6 +2,15 @@ class Project
   include Mongoid::Document
   include Mongoid::Paperclip
   include Mongoid::Timestamps::Created   
+  include Tire::Model::Search
+  include Tire::Model::Callbacks
+  
+  def self.search(params)
+      tire.search(load: true) do
+        query { string params[:query], default_operator: "AND" } if params[:query].present?
+      end
+  end
+  
   
   has_mongoid_attached_file :image,
               :styles => { :thumb  => "50x50#",

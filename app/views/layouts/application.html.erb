@@ -21,9 +21,10 @@
 	<!-- 960 Container -->
 	<div class="container">			
 		<div class="sixteen columns">
-			<h1 class="title cloumns eight alpha"><%= link_to('Zeit und Zeug', home_url) %></h1>
+			<h1 class="title cloumns six alpha"><%= link_to('Zeit und Zeug', home_url) %></h1>
 			<span class="columns two"><%= link_to('Explore', categories_path, :class => 'button') %></span>
-			<span class="usermenu columns six omega"><%= render 'users/user_navigation' %></span>
+			<span class="columns four"><%= render 'shared/search' %></span>
+			<span class="usermenu columns four omega"><%= render 'users/user_navigation' %></span>
 		</div>		
 	</div>	
 </div>
