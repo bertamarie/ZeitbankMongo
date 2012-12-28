@@ -6,6 +6,8 @@ class UsersController < ApplicationController
     @favourite_projects = Project.where('fans.user_id' => @user.id.to_s)
     @owned_projects = Project.where('owner' => @user.id.to_s)
     @supported_projects = Project.where('supporter' => @user.id.to_s)
+    @messages_received = Message.where('recipient' => @user.id.to_s)
+    @messages_sent = Message.where('sender' => @user.id.to_s)
   end
   
   def update

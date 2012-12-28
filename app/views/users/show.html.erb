@@ -34,5 +34,52 @@
 		<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
 	</div>
 	<% end %>
-		
+	
+	<div class="sixteen columns">
+		<ul class="tabs">
+			<li><a href="#t1" class="active">Inbox</a></li>
+			<li><a href="#t2">Outbox</a></li>
+		</ul>
+		<ul class="tabs-content">
+			<li id="t1" class="active">	
+				<table width=100%>
+					<tr>
+						<th>Subject</th>
+						<th>Message</th>
+						<th>Sender</th>
+						<th></th>
+					</tr>
+					<% @messages_received.each do |message| %>
+					<tr>
+						
+						<td><%= message.subject %></td>
+						<td><%= message.content %></td>
+						<td><%= User.find(message.sender).name %></td>
+						<td><%= link_to 'Reply', message_path(message.sender)%>	</td>
+					<tr>
+					<% end %>
+				</table>			
+			</li>
+			<li id="t2">
+				<table width=100%>
+					<tr>
+						<th>Subject</th>
+						<th>Message</th>
+						<th>Recipient</th>
+						<th></th>
+					</tr>
+					<% @messages_sent.each do |message| %>
+					<tr>
+						
+						<td><%= message.subject %></td>
+						<td><%= message.content %></td>
+						<td><%= User.find(message.recipient).name %></td>
+						<td></td>
+					<tr>
+					<% end %>
+				</table>
+			</li>
+		</ul>
+			
+	</div>		
 </div>

@@ -1,5 +1,8 @@
 AwsomeApp::Application.routes.draw do
 
+  resources :messages
+
+
   resources :categories
   resources :projects
   devise_for :users
@@ -69,5 +72,6 @@ AwsomeApp::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
   match '/users/:id', :to => 'users#show', :as => 'user'
   match '/tasks/new/:id', :to => 'tasks#new', :as => 'task'
+  match '/messages/new/:id', :to => 'messages#new', :as => 'message'
   match ':controller(/:action(/:id))'
 end

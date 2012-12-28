@@ -86,64 +86,19 @@ img.align-right{float: right; margin: 0 0 12px 15px;}
 	}
 
 /* Custom Lists, Buttons, Tags, etc. */
-ul.square {
-	padding: 10px;
-}
+
 a.button{
 	text-align: center;
 }
 
 /* Form Overrides */
 input{ font-size: 11px !important; }
-input.sidebar-search{ width: 90%; min-width: 195px; } 
-
-/* Tags / Categories Styling */
-.tags a{
-	background: none repeat scroll 0 0 #333333;
-	-webkit-border-radius: 3px 3px 3px 3px;
-	   -moz-border-radius: 3px 3px 3px 3px;
-         -o-border-radius: 3px 3px 3px 3px;
-	        border-radius: 3px 3px 3px 3px;
-    display: block;
-    float: left;
-    margin: 2px 2px 0 0;
-    padding: 5px 12px;
-    text-decoration: none;
-}
-
-
-/* Miscelleneous Classes */
-img.tag_icon{
-	float: left; 
-	border: 0 !important; 
-	padding: 5px 13px 0 0;
-	margin-bottom: 0;
-	}
-
-#entry .tags{margin: -12px 0 -7px;}
-.tags .button{margin-bottom: 2px;}
-
-.chzn-container-single .chzn-search input{min-width: 20px;}
- 
-.excerpt .date{margin-bottom: 20px;}
-
-.my-avatar {
-    float: right;
-    padding: 5px;
-    width: 32px;
-    height: 40px;
-}
-
-ul.square, ul.circle, ul.disc {
-    margin-left: 15px;
-    font-size: 13px;
-}
 
 /* ======================================================= */
 /* #SECTIONS */
 /* ======================================================= */
 
-/* Section declarations for BG stripes */
+/* Section declarations*/ 
 #section-tophat, #section-footer, #section-sub-footer {	position: relative;  z-index: 1;  } /* Setup for :after double bgs below */
 
 #section-tophat{  background: #222;	 background: rgba(0,0,0,0.8);  }
@@ -185,7 +140,7 @@ ul.square, ul.circle, ul.disc {
 #section-footer h5{
 	position: relative;
 	z-index: 1;
-	padding: 2px 10px;
+	padding: 2px 0;
 	margin-bottom: 20px;
 	}
 	
@@ -260,6 +215,7 @@ span.usermenu{
 h1.title{
 	float: left;
 	line-height: 1;
+	margin-top: 2px !important;
 }
 h1.title a, h1.title a:hover{
 	color: #FFF;
@@ -269,11 +225,48 @@ h1.title a, h1.title a:hover{
 	display: inline;
 }
 a.button{
+	color: #444 !important;
 	margin-bottom: 0 !important;
 }
 
 h3{
-	margin-top: 30px !important;
+	font-size: 1.5em !important;
+	line-height: 1.2 !important;
+	font-weight: normal !important;
+	text-transform: uppercase;
+	margin-top: 20px !important;
+}
+h3 span{
+	font-size: 1.2;
+	text-transform: none;
+	font-style: italic;
+}
+#query{
+	margin-top: 2px;
+	margin-bottom: 0 !important;
+	padding-top: 9px;
+	padding-bottom:8px;
+	float: left;
+}
+.search-button, .search-form{
+	margin-bottom: 0 !important;
+}
+
+.user_icon{
+	float: left; 
+	width: 60px;
+	text-align: center;
+	margin: 0 15px 0 0;
+}
+
+.box{
+	border-bottom: 1px solid #ccc;
+	padding: 5px 10px;
+	margin: 5px 0;
+	overflow: hidden;
+}
+.sidebar{
+	margin-top: 20px;
 }
 
 /* ======================================================= */
@@ -357,6 +350,9 @@ a:hover .project_preview {
 .project_preview .project-img img{
 	max-height: 150px;
 }
+a .project_preview{
+	color: #444;
+}
 /* ======================================================= */
 /*			Project View 								   */
 /* ======================================================= */
@@ -367,7 +363,8 @@ a:hover .project_preview {
 	padding: 15px 15px 10px 15px;
 }
 .project_view .project-img img{
-	height: 100%;
+	max-height: 300px;
+
 }
 .project_view .project-meta .project-description{
 	text-align: justify;
@@ -381,6 +378,8 @@ a:hover .project_preview {
 .project_view .project-meta .project_edit{
 	float: right;
 }
+
+
 
 
 

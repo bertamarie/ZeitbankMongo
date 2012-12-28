@@ -2,6 +2,20 @@
 <!-- 960 Container -->
 <div class="container project_preview_container">	
 	<div class="sixteen columns">
+		<h3>Most Loved Projects</h3>			
+	</div>
+	<% @projects_loved.each do |project| %>
+	<div class="four columns">
+		<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
+	</div>	
+	<% end %>
+</div>
+
+<!-- ============================================== -->
+
+<!-- 960 Container -->
+<div class="container project_preview_container">	
+	<div class="sixteen columns">
 		<h3>Latest Projects</h3>
 	</div>
 	<% @projects_last.each do |project| %>
@@ -13,18 +27,5 @@
 
 <!-- ============================================== -->
 
-<!-- 960 Container -->
-<div class="container project_preview_container">	
-	<div class="sixteen columns">
-		<h3>Most Loved Projects</h3>			
-	</div>
-	<% @projects_loved.each do |project| %>
-	<div class="four columns">
-		<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
-	</div>	
-	<% end %>
-</div>
-
-<!-- ============================================== -->
 
 

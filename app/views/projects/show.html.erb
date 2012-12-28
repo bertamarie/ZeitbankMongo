@@ -33,13 +33,13 @@
 						<% end %>
 					</div>    							
 				</div>
-				
+				<div class="box">
 				<h3>Supporter</h3>
 				<ul>
 					<% if project.supporter != nil%>
 						<% project.supporter.each do |supporter| %>
 							<% user = User.find(supporter)%>
-							<li>
+							<li class="user_icon">
 								<%= link_to(user_path(user)) do%>
 								<%=image_tag(user.image(:thumb)) %><br />
 								<%= user.name%>
@@ -48,13 +48,14 @@
 						<% end %>
 					<% end %>
 				</ul> 
- 
+				</div>
+ 				<div class="box">
 				<h3>Fans</h3>
 				<ul>  
 					<% if project.fans != nil%>
 						<% project.fans.each do |fan| %>
 							<% user = User.find(fan)%>
-							<li>
+							<li class="user_icon">
 								<%= link_to(user_path(user)) do%>
 								<%=image_tag(user.image(:thumb)) %><br />
 								<%= user.name%>
@@ -62,10 +63,12 @@
 							</li>
 						<% end %>
 					<% end %>		  
-				</ul>     	
+				</ul> 
+				</div>    	
 			</div>   
-			<div class="six columns omega">
-				<h3>Things to do</h3>
+			<div class="six columns omega sidebar">
+				<div class="box">
+				<h3>Support the project<br /><span>take on a task!</span></h3>
 				<dl>
 				<% if project.tasks != nil%>
 					<% project.tasks.each do |task| %>
@@ -89,19 +92,26 @@
 					<% end %>
 				<% end %>
 				</dl>
+				
 					<% if user_signed_in? %>   
 						<% if (project.owner == current_user.id.to_s)%>
 						<%= link_to "Add Task", task_path(project) %>
 						<% end %>
 					<% end%>
+				</div>
+				<div class="box">
 				<h3>Owner</h3>
-				<% user = User.find(project.owner)%>
-				<p>
-					<%= link_to(user_path(user)) do%>
-					<%=image_tag(user.image(:thumb)) %><br />
-					<%= user.name%>
+				<% owner = User.find(project.owner)%>
+				<p class="user_icon">
+					<%= link_to(user_path(owner)) do%>
+					<%=image_tag(owner.image(:thumb)) %><br />
+					<span><%= owner.name%></span>
 					<% end %>
 				</p>
+				<% if current_user != owner %>
+					<%= link_to 'Send a Message', message_path(owner) %>
+				<% end %>
+				</div>
 			</div> 
 		</div>
 		<!-- /End 1 Columns -->		

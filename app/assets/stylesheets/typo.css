@@ -4,12 +4,12 @@
 /* ======================================================= */
 
 body{ 
-	font: 13px/19px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	font: 13px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	color: #555;
 	}
 
-a{color: #ee7727; text-decoration: none;}
-a:hover{opacity: 0.8; color: #444;}
+a:link, a:visited{color: #01A4A4; text-decoration: none;}
+a:hover{color: #666;}
 a:hover .project {opacity: 1;}
 
 			

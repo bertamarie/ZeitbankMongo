@@ -4,7 +4,7 @@
   <title>AwsomeApp</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
-  <%= javascript_include_tag "jquery-1.8.3.min.js", "rails.js" %>
+  <%= javascript_include_tag "application.js", "rails.js" %>
   
 </head>
 <body>
@@ -21,9 +21,9 @@
 	<!-- 960 Container -->
 	<div class="container">			
 		<div class="sixteen columns">
-			<h1 class="title cloumns six alpha"><%= link_to('Zeit und Zeug', home_url) %></h1>
+			<h1 class="title cloumns four alpha"><%= link_to('ZEIT & ZEUG', home_url) %></h1>
 			<span class="columns two"><%= link_to('Explore', categories_path, :class => 'button') %></span>
-			<span class="columns four"><%= render 'shared/search' %></span>
+			<span class="columns six"><%= render 'shared/search' %></span>
 			<span class="usermenu columns four omega"><%= render 'users/user_navigation' %></span>
 		</div>		
 	</div>	
@@ -43,41 +43,40 @@
 			<!-- 1/4 -->
 			<div class="four columns alpha">
 				<h5>About</h5>
-				<p>The SuperSkeleton layout has been designed with responsive, future-proof websites in mind.</p>
-				<p>It supports all of the content you can dream up, including image galleries, advertisement units, all function HTML elements, and lots lots more!</p>
-				<p>If you're looking for a template to start building your own next site with, this is a great place to start!</p>
+				<p>Zeit und Zeug is a Platform to find help for your Projects.</p>
+				<p>Blah, blah</p>
+				<p>Blah, blah, blah, blah</p>
 			</div>
 			<!-- /End 1/4 -->
 						
 			<!-- 2/4 -->
-			<div class="four columns">
-				
-				<h5>From Twitter</h5>
-				<ul>
-					<li>If you're looking for a template to start building your own next site with, this is a great place to start! <span>4 days ago</span></li>
-					<li>It supports all of the content you can dream up, including image galleries, advertisement units, all function HTML elements, and lots lots more! <span>4 days ago</span></li>
-					<li>The SuperSkeleton layout has been designed with responsive, future-proof websites in mind. <span>4 days ago</span></li>
-				</ul>							
+			<div class="four columns omega">
+				<h5>Contact us</h5>
+				<p>Contact Form Here!</p>
 			</div>
+			
 			<!-- /End 2/4 -->
 			
 			<!-- 3/4 -->
 			<div class="four columns">
 				<h5>Popular Categories</h5>
 				<ul>
-					<li><a href="#">Music</a></li>
+					<li><a href="#">Art</a></li>
 					<li><a href="#">Film</a></li>
 					<li><a href="#">Theater</a></li>
-					<li><a href="#">Lala</a></li>
+					<li><a href="#">Computer</a></li>
 				</ul>
 			</div>
 			<!-- /End 3/4 -->		
 						
 			<!-- 4/4 -->
-			<div class="four columns omega">
-				<h5>Lampi</h5>
-				<p>Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung
-				</p>
+			<div class="four columns">		
+				<h5>Social Icons Amok....</h5>
+				<ul>
+					<li>Bitte hier mal FB</li>
+					<li>Bitte hier dann Twitter</li>
+					<li>usw.</li>
+				</ul>							
 			</div>
 			<!-- /End 4/4 -->			
 			<br />			
