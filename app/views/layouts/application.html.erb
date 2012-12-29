@@ -5,6 +5,14 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
   <%= javascript_include_tag "application.js", "rails.js" %>
+
+	<script type="text/javascript">
+	    $(window).load(function(){
+	      $('.flexslider').flexslider({
+	        animation: "slide"
+	      });
+	    });
+	</script>
   
 </head>
 <body>
@@ -21,9 +29,20 @@
 	<!-- 960 Container -->
 	<div class="container">			
 		<div class="sixteen columns">
-			<h1 class="title cloumns four alpha"><%= link_to('ZEIT & ZEUG', home_url) %></h1>
-			<span class="columns two"><%= link_to('Explore', categories_path, :class => 'button') %></span>
-			<span class="columns six"><%= render 'shared/search' %></span>
+			<div class="columns three alpha">
+				<h1 class="title"><%= link_to('ZEIT ZEUG', home_url) %></h1>
+			</div>
+			<nav class="columns three">
+			<%= link_to(categories_path,  :class => 'nav_link') do %>
+			  Explore<br />Projects
+			<% end %>
+			<%= link_to(new_project_path, :class => 'nav_link') do%>
+			  Start<br />Project
+			<% end %>
+		</nav>
+			<div class="columns six">
+				<%= render 'shared/search' %>
+			</div>
 			<span class="usermenu columns four omega"><%= render 'users/user_navigation' %></span>
 		</div>		
 	</div>	

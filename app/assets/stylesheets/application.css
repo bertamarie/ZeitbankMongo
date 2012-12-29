@@ -14,11 +14,6 @@
  *= require skeleton
  *= require_tree .
  */
-= require base
-= require layout
-= require skeleton
-@import url("typo.css");
-
 
 /* ======================================================= */
 /* #SITE STYLES : Universal Theme Visual Styles */
@@ -30,6 +25,7 @@ h2.title span,
 ul.tabs li a.active{ 
 	background: #fdfdfd;
 	background: rgba(246,246,246,0.5) ;
+	background: url(images/noise-white.png) !important;
 	position: relative;
 	z-index: 1;
 } 
@@ -101,7 +97,7 @@ input{ font-size: 11px !important; }
 /* Section declarations*/ 
 #section-tophat, #section-footer, #section-sub-footer {	position: relative;  z-index: 1;  } /* Setup for :after double bgs below */
 
-#section-tophat{  background: #222;	 background: rgba(0,0,0,0.8);  }
+#section-tophat{  background: #222;	 background: rgba(0,0,0,0.8);   }
 #section-footer{  background: #222;	 background: rgba(0,0,0,0.8);	}
 #section-sub-footer{  background: #111;	 background: rgba(0,0,0,0.95);   }
 
@@ -126,7 +122,7 @@ input{ font-size: 11px !important; }
 	width: 100%;
 	z-index: -1;
 }
-#section-tophat{padding: 10px 0;}
+#section-tophat{padding: 0;}
 
 
 /* #FOOTER */
@@ -207,19 +203,48 @@ input{ font-size: 11px !important; }
 /* #Custom Styles
 /* ======================================================= */
 
-span.usermenu{
-	float: right;
-	text-align: right;
-}
 
 h1.title{
 	float: left;
-	line-height: 1;
-	margin-top: 2px !important;
 }
 h1.title a, h1.title a:hover{
-	color: #FFF;
+	padding: 5px 10px;
 	background: none;
+	color: #FFF;
+	border-right: 1px solid rgba(255, 255, 255, .05);
+	border-left: 1px solid rgba(0, 0, 0, .05);
+}
+#section-tophat .columns{
+	margin: 0;
+}
+a.nav_link{
+	display: block;
+	padding: 7px 10px;
+	width: 35%;
+	float: left;
+	text-align: center;
+	border-right: 1px solid rgba(255, 255, 255, .05);	
+	border-left: 1px solid rgba(0, 0, 0, .05);
+	border-width: 0 1px;
+	font-size: 1.1em;
+}
+
+.search-form #query{
+	margin-top: 2px;
+	margin-bottom: 0 !important;
+	padding-top: 9px;
+	padding-bottom:8px;
+	float: left;
+}
+.search-button, .search-form{
+	float: right;
+	margin-bottom: 0 !important;
+	padding-top: 8px;	
+}
+span.usermenu{
+	float: right;
+	text-align: right;
+	padding-top: 8px;
 }
 .button_to, .button_to div{
 	display: inline;
@@ -233,7 +258,6 @@ h3{
 	font-size: 1.5em !important;
 	line-height: 1.2 !important;
 	font-weight: normal !important;
-	text-transform: uppercase;
 	margin-top: 20px !important;
 }
 h3 span{
@@ -241,17 +265,6 @@ h3 span{
 	text-transform: none;
 	font-style: italic;
 }
-#query{
-	margin-top: 2px;
-	margin-bottom: 0 !important;
-	padding-top: 9px;
-	padding-bottom:8px;
-	float: left;
-}
-.search-button, .search-form{
-	margin-bottom: 0 !important;
-}
-
 .user_icon{
 	float: left; 
 	width: 60px;
@@ -267,6 +280,18 @@ h3 span{
 }
 .sidebar{
 	margin-top: 20px;
+}
+
+.flexslider{
+	margin: 30px 0 40px 0 !important;
+}
+
+.flexslider .slides img{
+	height: 400px;
+}
+.flexslider .flex-control-nav {
+	position: absolute;
+	bottom: 0;
 }
 
 /* ======================================================= */
@@ -288,11 +313,12 @@ h3 span{
 /* ======================================================= */
 /*			Project and User Forms 						   */
 /* ======================================================= */
-.user_form, .project_form{
+.user_form, .project_form, .msg_form{
 	margin: 20px 0 !important;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	padding: 10px;
+	background: #fff;
 }
 .user_form form, .user_form h3{
 	width: 220px;
@@ -303,7 +329,7 @@ h3 span{
 	float: left;
 }
 
-.project_form form{
+.project_form form, .msg_form form{
 	width: 100%;
 	margin: 0 auto;	
 }
@@ -311,26 +337,37 @@ h3 span{
 .project_form input[type="password"], 
 .project_form input[type="email"], 
 .project_form textarea, 
-.project_form select {
+.project_form select,
+.msg_form input[type="text"], 
+.msg_form textarea {
 	width: 90%;
-	margin: 0 auto;	
+	margin: 0 auto 20px auto;	
 }
 .project_form h3,
-.project_form label{
+.project_form label,
+.project_form input[type="file"],
+.msg_form h3,
+.msg_form label{
 	margin-left: 4.2%;	
 }
 .project_form .actions,
-.project_form .checkbox-list{
-	margin-left: 3.3%;	
+.project_form .checkbox-list,
+.msg_form .actions{
+	margin-left: 3.5%;	
 }
 /* ======================================================= */
 /*			Project Preview 							   */
 /* ======================================================= */
+.project_preview_container{
+	border-top: 1px solid #ccc;
+	margin-bottom: 30px !important;
+}
 .project_preview {
 	margin: 20px 0 !important;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	padding: 10px;
+	background: #fff;
 }
 a:hover .project_preview {
 	box-shadow: 0 0 6px 1px #ccc;
@@ -359,6 +396,7 @@ a .project_preview{
 .project_view .project-img{
 	border: solid 1px #ccc;
 	text-align: center;
+	background: #fff;
 	margin-bottom: 10px;
 	padding: 15px 15px 10px 15px;
 }

@@ -16,7 +16,8 @@ class User
                :url => "/assets/users/:id/:style/:filename",
                :default_url => "users/default/:style/default.png"
 
-  ## Database authenticatable ield :name
+  ## Database authenticatable
+  field :name
   validates_presence_of :name
   validates_uniqueness_of :name, :email, :case_sensitive => false
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :image

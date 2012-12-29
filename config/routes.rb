@@ -1,13 +1,11 @@
 AwsomeApp::Application.routes.draw do
 
-  resources :messages
-
-
   resources :categories
   resources :projects
   devise_for :users
   resources :users
   resources :tasks
+  resources :messages
 
 
   #get "users/show"

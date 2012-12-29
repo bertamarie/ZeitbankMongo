@@ -20,13 +20,17 @@
   </div> 
   <div class="field">
     <%= f.label :image %>
-    <%= f.file_field :image %>
+    <%= f.file_field :image %>	
   </div>
-  <div class="checkbox-list">
+  <div class="field">
+	<br />
+	<%= f.label :category %>
 	<% @categories = Category.all.asc(:name)%>
+	<div class="checkbox-list">
 	<% @categories.each do |category|%>
 		<%= check_box_tag "category_ids[]", category.id, @project.category_ids.include?(category.id) %> <%= category.name %>
 	<% end %>
+	</div>
   </div>
   <%= f.hidden_field :owner, :value => current_user.id %>
   <br />
