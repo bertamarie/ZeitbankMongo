@@ -1145,3 +1145,211 @@ Caused by: java.net.ConnectException: connection timed out
 	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
 	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
 	... 3 more
+[2013-01-03 16:09:54,255][WARN ][cluster.service          ] [Sluggo] failed to reconnect to node [Sluggo][1rMqM2lrSH-xkg5DcGSubQ][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Sluggo][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-03 16:13:54,549][WARN ][cluster.service          ] [Sluggo] failed to reconnect to node [Sluggo][1rMqM2lrSH-xkg5DcGSubQ][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Sluggo][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-03 16:17:54,845][WARN ][cluster.service          ] [Sluggo] failed to reconnect to node [Sluggo][1rMqM2lrSH-xkg5DcGSubQ][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Sluggo][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-03 16:21:55,182][WARN ][cluster.service          ] [Sluggo] failed to reconnect to node [Sluggo][1rMqM2lrSH-xkg5DcGSubQ][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Sluggo][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-03 16:25:55,482][WARN ][cluster.service          ] [Sluggo] failed to reconnect to node [Sluggo][1rMqM2lrSH-xkg5DcGSubQ][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Sluggo][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-03 16:29:55,854][WARN ][cluster.service          ] [Sluggo] failed to reconnect to node [Sluggo][1rMqM2lrSH-xkg5DcGSubQ][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Sluggo][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-03 16:33:56,183][WARN ][cluster.service          ] [Sluggo] failed to reconnect to node [Sluggo][1rMqM2lrSH-xkg5DcGSubQ][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Sluggo][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-03 16:37:56,482][WARN ][cluster.service          ] [Sluggo] failed to reconnect to node [Sluggo][1rMqM2lrSH-xkg5DcGSubQ][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Sluggo][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-03 16:41:56,783][WARN ][cluster.service          ] [Sluggo] failed to reconnect to node [Sluggo][1rMqM2lrSH-xkg5DcGSubQ][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Sluggo][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-03 16:45:57,083][WARN ][cluster.service          ] [Sluggo] failed to reconnect to node [Sluggo][1rMqM2lrSH-xkg5DcGSubQ][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Sluggo][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-03 16:49:57,435][WARN ][cluster.service          ] [Sluggo] failed to reconnect to node [Sluggo][1rMqM2lrSH-xkg5DcGSubQ][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Sluggo][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-03 16:53:57,759][WARN ][cluster.service          ] [Sluggo] failed to reconnect to node [Sluggo][1rMqM2lrSH-xkg5DcGSubQ][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Sluggo][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-03 16:57:58,041][WARN ][cluster.service          ] [Sluggo] failed to reconnect to node [Sluggo][1rMqM2lrSH-xkg5DcGSubQ][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Sluggo][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more

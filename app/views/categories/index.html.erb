@@ -4,7 +4,7 @@
 			<h3>Explore</h3>
 			<ul class="category_nav">
 				<% @categories.each do |category| %>
-					<li><%= link_to category.name, category, :remote => true%></li>
+					<li><%= link_to category.name, category, :remote => true, :class => category.name%></li>
 				<% end %>
 			</ul>
 			<script>
@@ -26,7 +26,17 @@
 						<div class="twelve columns">
 							<h3><%= category.name %></h3>
 							<% category_projects.count < 3 ? count = category_projects.count : count = 3 %>
-							<div><%= count%>/<%= category_projects.count%> | <%= link_to "See all", category, :remote => true%></div>
+							<div class="link_to_all"><%= count%>/<%= category_projects.count%> | <%= link_to "See all", category, :remote => true, :class => category.name%></div>
+							<script>
+							$(function() {
+							   $('.link_to_all a.<%=category.name%>').click(function() {
+							      // remove classes from all
+							      $('.category_nav li a').removeClass("active");
+							      // add class to the one we clicked
+							      $('.category_nav li a.<%=category.name%>').addClass("active");
+							   });
+							});
+							</script>
 						</div>	
 						
 						<% category_projects.each do |project| %>

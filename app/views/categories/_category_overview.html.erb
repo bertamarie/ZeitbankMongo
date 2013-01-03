@@ -7,7 +7,7 @@
 	</div>
 	<% category_projects.each do |project| %>
 		<div class="four columns">
-				<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
+			<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
 		</div>
 	<% end %>
 	<%else%>
