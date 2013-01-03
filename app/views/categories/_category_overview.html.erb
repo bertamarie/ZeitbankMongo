@@ -1,7 +1,9 @@
-<% category_projects = @category.projects %>
+<% category_projects = @category.projects.page(params[:page]).per(3) %>
 <% if (category_projects.exists?) %>
-	<div class="sixteen columns">
+	<div class="thirteen columns omega">
+	<div class="thirteen columns">
 		<h3><%= @category.name %></h3>
+		<%= paginate category_projects, :remote => true %> 
 	</div>
 	<% category_projects.each do |project| %>
 		<div class="four columns">
@@ -9,8 +11,12 @@
 		</div>
 	<% end %>
 	<%else%>
-	<div class="sixteen columns">
+	<div class="thirteen columns">
 		<h3><%= @category.name %></h3>
 		<p>No Projects found in this Category</p>
+	</div>
 	</div>	
 <% end %>	
+
+
+

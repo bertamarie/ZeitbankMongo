@@ -1,0 +1,152 @@
+[2013-01-02 18:15:59,762][INFO ][node                     ] [Fantastic Four] {0.20.1}[6988]: initializing ...
+[2013-01-02 18:15:59,787][INFO ][plugins                  ] [Fantastic Four] loaded [], sites []
+[2013-01-02 18:16:05,475][INFO ][node                     ] [Fantastic Four] {0.20.1}[6988]: initialized
+[2013-01-02 18:16:05,476][INFO ][node                     ] [Fantastic Four] {0.20.1}[6988]: starting ...
+[2013-01-02 18:16:05,738][INFO ][transport                ] [Fantastic Four] bound_address {inet[/0:0:0:0:0:0:0:0%0:9300]}, publish_address {inet[/192.168.2.13:9300]}
+[2013-01-02 18:16:09,753][INFO ][cluster.service          ] [Fantastic Four] detected_master [Blastaar][kUj5QQRNTeK__-cFeBnxXg][inet[/192.168.2.2:9300]], added {[Blastaar][kUj5QQRNTeK__-cFeBnxXg][inet[/192.168.2.2:9300]],}, reason: zen-disco-receive(from master [[Blastaar][kUj5QQRNTeK__-cFeBnxXg][inet[/192.168.2.2:9300]]])
+[2013-01-02 18:16:09,844][INFO ][discovery                ] [Fantastic Four] elasticsearch/R51RPRGRSPuWbo7eGmV0mA
+[2013-01-02 18:16:09,848][INFO ][http                     ] [Fantastic Four] bound_address {inet[/0:0:0:0:0:0:0:0%0:9200]}, publish_address {inet[/192.168.2.13:9200]}
+[2013-01-02 18:16:09,848][INFO ][node                     ] [Fantastic Four] {0.20.1}[6988]: started
+[2013-01-02 18:25:37,687][INFO ][node                     ] [Fantastic Four] {0.20.1}[6988]: stopping ...
+[2013-01-02 18:25:37,922][INFO ][node                     ] [Fantastic Four] {0.20.1}[6988]: stopped
+[2013-01-02 18:25:37,922][INFO ][node                     ] [Fantastic Four] {0.20.1}[6988]: closing ...
+[2013-01-02 18:25:37,930][INFO ][node                     ] [Fantastic Four] {0.20.1}[6988]: closed
+[2013-01-02 18:29:42,679][INFO ][node                     ] [Sluggo] {0.20.1}[7073]: initializing ...
+[2013-01-02 18:29:42,687][INFO ][plugins                  ] [Sluggo] loaded [], sites []
+[2013-01-02 18:29:45,717][INFO ][node                     ] [Sluggo] {0.20.1}[7073]: initialized
+[2013-01-02 18:29:45,718][INFO ][node                     ] [Sluggo] {0.20.1}[7073]: starting ...
+[2013-01-02 18:29:45,847][INFO ][transport                ] [Sluggo] bound_address {inet[/0:0:0:0:0:0:0:0%0:9300]}, publish_address {inet[/192.168.2.13:9300]}
+[2013-01-02 18:29:49,005][INFO ][cluster.service          ] [Sluggo] detected_master [Blastaar][kUj5QQRNTeK__-cFeBnxXg][inet[/192.168.2.2:9300]], added {[Blastaar][kUj5QQRNTeK__-cFeBnxXg][inet[/192.168.2.2:9300]],}, reason: zen-disco-receive(from master [[Blastaar][kUj5QQRNTeK__-cFeBnxXg][inet[/192.168.2.2:9300]]])
+[2013-01-02 18:29:49,035][INFO ][discovery                ] [Sluggo] elasticsearch/1rMqM2lrSH-xkg5DcGSubQ
+[2013-01-02 18:29:49,039][INFO ][http                     ] [Sluggo] bound_address {inet[/0:0:0:0:0:0:0:0%0:9200]}, publish_address {inet[/192.168.2.13:9200]}
+[2013-01-02 18:29:49,049][INFO ][node                     ] [Sluggo] {0.20.1}[7073]: started
+[2013-01-02 19:10:26,087][WARN ][transport.netty          ] [Sluggo] exception caught on transport layer [[id: 0x3cc5532e, /192.168.2.13:58466 => /192.168.2.2:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:21)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:198)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:166)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:245)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:59)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.processSelectedKeys(AbstractNioWorker.java:471)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:332)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:35)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-02 19:10:56,162][INFO ][discovery.zen            ] [Sluggo] master_left [[Blastaar][kUj5QQRNTeK__-cFeBnxXg][inet[/192.168.2.2:9300]]], reason [transport disconnected (with verified connect)]
+[2013-01-02 19:10:56,494][INFO ][cluster.service          ] [Sluggo] master {new [Sluggo][1rMqM2lrSH-xkg5DcGSubQ][inet[/192.168.2.13:9300]], previous [Blastaar][kUj5QQRNTeK__-cFeBnxXg][inet[/192.168.2.2:9300]]}, removed {[Blastaar][kUj5QQRNTeK__-cFeBnxXg][inet[/192.168.2.2:9300]],}, reason: zen-disco-master_failed ([Blastaar][kUj5QQRNTeK__-cFeBnxXg][inet[/192.168.2.2:9300]])
+[2013-01-02 20:40:37,805][WARN ][transport.netty          ] [Sluggo] exception caught on transport layer [[id: 0x7b053af6, /192.168.2.2:60334 => /192.168.2.13:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:21)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:198)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:166)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:245)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:59)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.processSelectedKeys(AbstractNioWorker.java:471)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:332)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:35)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-02 20:40:37,805][WARN ][transport.netty          ] [Sluggo] exception caught on transport layer [[id: 0xc4bf2bb4, /192.168.2.2:60333 => /192.168.2.13:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:21)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:198)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:166)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:245)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:59)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.processSelectedKeys(AbstractNioWorker.java:471)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:332)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:35)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-02 20:40:37,810][WARN ][transport.netty          ] [Sluggo] exception caught on transport layer [[id: 0xa81fa5a4, /192.168.2.2:60329 => /192.168.2.13:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:21)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:198)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:166)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:245)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:59)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.processSelectedKeys(AbstractNioWorker.java:471)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:332)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:35)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-02 20:40:37,806][WARN ][transport.netty          ] [Sluggo] exception caught on transport layer [[id: 0x3fb40472, /192.168.2.2:60331 => /192.168.2.13:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:21)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:198)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:166)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:245)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:59)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.processSelectedKeys(AbstractNioWorker.java:471)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:332)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:35)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-02 20:40:37,806][WARN ][transport.netty          ] [Sluggo] exception caught on transport layer [[id: 0x85616119, /192.168.2.2:60328 => /192.168.2.13:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:21)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:198)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:166)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:245)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:59)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.processSelectedKeys(AbstractNioWorker.java:471)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:332)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:35)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-02 20:40:37,833][WARN ][transport.netty          ] [Sluggo] exception caught on transport layer [[id: 0xcce18d5a, /192.168.2.2:60332 => /192.168.2.13:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:21)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:198)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:166)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:245)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:59)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.processSelectedKeys(AbstractNioWorker.java:471)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:332)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:35)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-02 20:46:40,847][WARN ][transport.netty          ] [Sluggo] exception caught on transport layer [[id: 0x79656868, /192.168.2.2:60330 => /192.168.2.13:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:21)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:198)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:166)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:245)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:59)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.processSelectedKeys(AbstractNioWorker.java:471)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:332)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:35)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)

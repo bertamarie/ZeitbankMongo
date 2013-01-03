@@ -1,4 +1,4 @@
-AwsomeApp::Application.routes.draw do
+Zeitundzeug::Application.routes.draw do
 
   resources :categories
   resources :projects

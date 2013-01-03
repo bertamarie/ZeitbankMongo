@@ -95,7 +95,7 @@
 				
 					<% if user_signed_in? %>   
 						<% if (project.owner == current_user.id.to_s)%>
-						<%= link_to "Add Task", task_path(project) %>
+						<%= link_to "Add Task", task_path(project)%>
 						<% end %>
 					<% end%>
 				</div>
@@ -108,9 +108,15 @@
 					<span><%= owner.name%></span>
 					<% end %>
 				</p>
+				<p class="user_info">
+					Website: <a href="#">www.ayoka.de</a><br />
+					Facebook: <a href="#"><%= owner.name%> on Facebook</a><br />
 				<% if current_user != owner %>
-					<%= link_to 'Send a Message', message_path(owner) %>
+					<%= link_to(message_path(owner), :class=>'button') do %>
+					Send <%= owner.name %> a Message
+					<%end%>
 				<% end %>
+				</p>
 				</div>
 			</div> 
 		</div>

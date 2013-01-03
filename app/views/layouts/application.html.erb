@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AwsomeApp</title>
+  <title>Zeit und Zeug</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
   <%= javascript_include_tag "application.js", "rails.js" %>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
 	<script type="text/javascript">
 	    $(window).load(function(){
+		
+			$('a.popup').click(function() {
+				$('<div class="container" />').appendTo('body').load($(this).attr('href') + ' .form_container').dialog(
+					
+					{ 
+						position: [100, 100]
+					});
+					return false;
+			});
+			
 	      $('.flexslider').flexslider({
 	        animation: "slide"
 	      });
+	
 	    });
 	</script>
   
@@ -30,7 +42,7 @@
 	<div class="container">			
 		<div class="sixteen columns">
 			<div class="columns three alpha">
-				<h1 class="title"><%= link_to('ZEIT ZEUG', home_url) %></h1>
+				<h1 class="title"><%= link_to('Zeit und Zeug', home_url) %></h1>
 			</div>
 			<nav class="columns three">
 			<%= link_to(categories_path,  :class => 'nav_link') do %>

@@ -1,31 +1,54 @@
 <div class="container">
-		<div class="columns sixteen">
+	<div class="columns sixteen">
+		<div class="columns three alpha">
 			<h3>Explore</h3>
+			<ul class="category_nav">
 				<% @categories.each do |category| %>
-					<%= link_to category.name, category, :remote => true%>
+					<li><%= link_to category.name, category, :remote => true%></li>
 				<% end %>
+			</ul>
+			<script>
+			$(function() {
+			   $('.category_nav li a').click(function() {
+			      // remove classes from all
+			      $('.category_nav li a').removeClass("active");
+			      // add class to the one we clicked
+			      $(this).addClass("active");
+			   });
+			});
+			</script>
 		</div>
-		<div id="content">
-			<% @categories.each do |category| %>
-			<% category_projects = category.projects %>
-				<% if (category_projects.exists?) %>
-					<div class="sixteen columns">
-						<h3><%= category.name %></h3>
-					</div>		
-					<% category_projects.each do |project| %>
-					<!-- Delete all fans, supporter and likes -->
-					<% if false %>
-						<% project.fans = nil %>
-						<% project.supporter = nil %>
-						<% project.update_attribute("likes", 0) %>
-					<% end %>
-					<div class="four columns">
-							<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
-					</div>
+		<div class="content">
+			<div class="columns thirteen omega">
+				<% @categories.each do |category| %>
+				<% category_projects = category.projects.page(params[:page]).per(3) %>
+					<% if (category_projects.exists?) %>
+						<div class="twelve columns">
+							<h3><%= category.name %></h3>
+							<% category_projects.count < 3 ? count = category_projects.count : count = 3 %>
+							<div><%= count%>/<%= category_projects.count%> | <%= link_to "See all", category, :remote => true%></div>
+						</div>	
+						
+						<% category_projects.each do |project| %>
+						<!-- Delete all fans, supporter and likes -->
+						<% if false %>
+							<% project.fans = nil %>
+							<% project.supporter = nil %>
+							<% project.update_attribute("likes", 0) %>
+						<% end %>
+						
+						<div class="four columns">
+								<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
+						</div>
+						<% end %>
 					<% end %>
 				<% end %>
-			<% end %>
+			</div>
 		</div>
+	</div>
 </div>
+
+
+
 
 

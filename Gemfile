@@ -22,6 +22,7 @@ gem "skeleton-rails"
 gem "mongoid-paperclip", "~> 0.0.8", :require => "mongoid_paperclip"
 gem "tire", "~> 0.5.2"
 gem "seed_dump", "~> 0.4.2"
+gem "kaminari"
 
 group :test do
   gem 'cucumber-rails' , '>=1.3.0'

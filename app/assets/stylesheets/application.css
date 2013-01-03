@@ -109,6 +109,7 @@ input{ font-size: 11px !important; }
 #section-tophat{
 	border-bottom: 2px solid #ddd;
 	background: #333;
+	background: url(images/bg.gif);
 }
 
 #section-tophat:after, #section-footer:after{
@@ -128,6 +129,7 @@ input{ font-size: 11px !important; }
 /* #FOOTER */
 #section-footer{
 	background: #333;
+	background: url(images/bg.gif);
 	margin-top: 40px;
 	border-top: 2px solid #ddd;
 	padding: 40px 0;
@@ -208,11 +210,10 @@ h1.title{
 	float: left;
 }
 h1.title a, h1.title a:hover{
-	padding: 5px 10px;
+	padding: 15px 24px 15px 0;
 	background: none;
 	color: #FFF;
 	border-right: 1px solid rgba(255, 255, 255, .05);
-	border-left: 1px solid rgba(0, 0, 0, .05);
 }
 #section-tophat .columns{
 	margin: 0;
@@ -271,7 +272,19 @@ h3 span{
 	text-align: center;
 	margin: 0 15px 0 0;
 }
+.user_icon img{
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	padding: 3px;
+}
 
+.user_icon a:hover{
+	opacity: 0.8;
+}
+
+.user_info .button{
+	margin-top: 15px !important;
+}
 .box{
 	border-bottom: 1px solid #ccc;
 	padding: 5px 10px;
@@ -293,6 +306,28 @@ h3 span{
 	position: absolute;
 	bottom: 0;
 }
+.flex-control-paging li a{
+	width: 8px !important;
+	height: 8px !important;
+}
+
+ul.category_nav{
+	margin: 28px 0;
+	padding: 0;	
+	font-size: 1.1em !important;
+}
+ul.category_nav li{
+	margin: 2px 0;
+	padding: 0;	
+}
+
+ul.category_nav li a{
+	display: block;
+	padding: 5px;
+}
+ul.category_nav li a.active{
+	background: #ddd;
+}
 
 /* ======================================================= */
 /*			Love and Unlove Buttons 					   */
@@ -313,7 +348,7 @@ h3 span{
 /* ======================================================= */
 /*			Project and User Forms 						   */
 /* ======================================================= */
-.user_form, .project_form, .msg_form{
+.user_form, .form_container{
 	margin: 20px 0 !important;
 	border: 1px solid #ccc;
 	border-radius: 5px;
@@ -329,30 +364,27 @@ h3 span{
 	float: left;
 }
 
-.project_form form, .msg_form form{
+.form_container form{
 	width: 100%;
 	margin: 0 auto;	
 }
-.project_form input[type="text"], 
-.project_form input[type="password"], 
-.project_form input[type="email"], 
-.project_form textarea, 
-.project_form select,
-.msg_form input[type="text"], 
-.msg_form textarea {
+.form_container input[type="text"], 
+.form_container input[type="password"], 
+.form_container input[type="email"],
+.form_container textarea,
+.form_container select
+ {
 	width: 90%;
 	margin: 0 auto 20px auto;	
 }
-.project_form h3,
-.project_form label,
-.project_form input[type="file"],
-.msg_form h3,
-.msg_form label{
+
+.form_container input[type="file"],
+.form_container h3,
+.form_container label{
 	margin-left: 4.2%;	
 }
-.project_form .actions,
-.project_form .checkbox-list,
-.msg_form .actions{
+.form_container .checkbox-list,
+.form_container .actions{
 	margin-left: 3.5%;	
 }
 /* ======================================================= */
@@ -395,6 +427,7 @@ a .project_preview{
 /* ======================================================= */
 .project_view .project-img{
 	border: solid 1px #ccc;
+	border-radius: 5px;
 	text-align: center;
 	background: #fff;
 	margin-bottom: 10px;
