@@ -3,13 +3,15 @@
 	<div class="thirteen columns omega">
 	<div class="thirteen columns">
 		<h3><%= @category.name %></h3>
-		<%= paginate category_projects, :remote => true %> 
 	</div>
 	<% category_projects.each do |project| %>
 		<div class="four columns">
 			<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
 		</div>
 	<% end %>
+	<div class="thirteen columns">
+		<%= paginate category_projects, :remote => true %> 
+	</div>
 	<%else%>
 	<div class="thirteen columns">
 		<h3><%= @category.name %></h3>

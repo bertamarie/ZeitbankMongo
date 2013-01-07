@@ -25,18 +25,6 @@
 					<% if (category_projects.exists?) %>
 						<div class="twelve columns">
 							<h3><%= category.name %></h3>
-							<% category_projects.count < 3 ? count = category_projects.count : count = 3 %>
-							<div class="link_to_all"><%= count%>/<%= category_projects.count%> | <%= link_to "See all", category, :remote => true, :class => category.name%></div>
-							<script>
-							$(function() {
-							   $('.link_to_all a.<%=category.name%>').click(function() {
-							      // remove classes from all
-							      $('.category_nav li a').removeClass("active");
-							      // add class to the one we clicked
-							      $('.category_nav li a.<%=category.name%>').addClass("active");
-							   });
-							});
-							</script>
 						</div>	
 						
 						<% category_projects.each do |project| %>
@@ -51,6 +39,20 @@
 								<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
 						</div>
 						<% end %>
+						<div class="twelve columns">
+							<% category_projects.count < 3 ? count = category_projects.count : count = 3 %>
+							<div class="link_to_all"><%= count%>/<%= category_projects.count%> | <%= link_to "See all", category, :remote => true, :class => category.name%></div>
+							<script>
+							$(function() {
+							   $('.link_to_all a.<%=category.name%>').click(function() {
+							      // remove classes from all
+							      $('.category_nav li a').removeClass("active");
+							      // add class to the one we clicked
+							      $('.category_nav li a.<%=category.name%>').addClass("active");
+							   });
+							});
+							</script>
+						</div>
 					<% end %>
 				<% end %>
 			</div>
