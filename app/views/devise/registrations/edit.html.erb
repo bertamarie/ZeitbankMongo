@@ -1,3 +1,4 @@
+
 <div class="container">
 	<div class="columns six user_form">
 		<h3>Edit <%= resource_name.to_s.humanize %></h3>
@@ -9,12 +10,24 @@
 		  	<%= f.text_field :name %>
 	      </div>
 		  <div>
-			<%= f.label :email %>
-		  	<%= f.email_field :email %>
-		  </div>
-		  <div>
 			<%= f.label :image %>
 		  	<%= f.file_field :image %>
+		  </div>
+		  <div>
+			<%= f.label :biography %>
+		  	<%= f.text_area :biography %>
+	      </div>
+		  <div>
+			<%= f.label :website %>
+		  	<%= f.url_field :website %>
+	      </div>
+		  <div>
+			<%= f.label :facebook %>
+		  	<%= f.url_field :facebook %>
+	      </div>
+		  <div>
+			<%= f.label :twitter %>
+		  	<%= f.url_field :twitter %>
 		  </div>
 		  <div>
 			<%= f.label :password %> <span class="small">leave blank if you don't want to change it</span>
@@ -28,6 +41,7 @@
 			<%= f.label :current_password %> <span class="small">confirm your changes with your current password</span>
 		  	<%= f.password_field :current_password %>
 		  </div>
+		  
 		  <div><%= f.submit "Update" %></div>
 		<% end %>
 	</div>

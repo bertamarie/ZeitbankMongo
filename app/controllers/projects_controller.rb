@@ -5,7 +5,7 @@ class ProjectsController < ApplicationController
   def add_supporter
     @project = Project.find(params[:id])  
     @user = current_user;   
-    @project.add_to_set(:supporter, @user.id.to_s)  
+    @project.add_to_set(:supporter, @user.id.to_s) 
     @task = @project.tasks.find(params[:task_id])
     @task.update_attribute(:owner, @user.id.to_s)
     @task.update_attribute(:status, "taken")

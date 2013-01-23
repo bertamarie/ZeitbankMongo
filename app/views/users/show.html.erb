@@ -1,85 +1,93 @@
 <div class="container">	
 	<div class="sixteen columns">
-		<h3><%= @user.name %>
-			<% if user_signed_in? && current_user.name == @user.name %>
-			  <%= link_to('Edit account', edit_user_registration_path, :class => 'button' )%>
+		<div class="six columns alpha">
+			<h3><%= @user.name %></h3>
+			<div class="user_image"><%= image_tag @user.image.url(:small)%></div>
+			<div class="user_info">
+				<strong>Website:</strong> 
+				<%if @user.website != "" && @user.website != nil %>
+					<%= link_to @user.website, @user.website%>
+				<%else%>
+					no Website available
+				<% end %><br />
+				<strong>Facebook:</strong> 
+				<%if @user.facebook != "" && @user.facebook != nil %>
+					<%= link_to  @user.facebook, @user.facebook%>
+				<%else%>
+					no Facebook connected
+				<% end %><br />
+				<strong>Twitter:</strong> 
+				<%if @user.twitter != "" && @user.twitter != nil %>
+					<%= link_to  @user.twitter, @user.twitter%>
+				<%else%>
+					no Twitter connected
+				<% end %><br />
+			</div>
+		</div>
+		<div class="ten columns omega">
+			<%if @user.biography != nil %>
+			<div class="user_bio">
+			<h3>Biography</h3>
+			<div class="user_bio_text">
+				<%= @user.biography%>
+			</div>
+			</div>
 			<% end %>
-		</h3>
-			<%= image_tag @user.image.url(:small)%>
+		</div>
+	</div>
+	<div class="sixteen columns text_right">
+		<% if user_signed_in? && current_user.name == @user.name %>
+		  <%= link_to('Edit Profile', edit_user_registration_path, :class => 'button' )%>
+		<% end %>
 	</div>
 	
 	<div class="sixteen columns">
-		<h3>Projects</h3>
+		<h3><% if current_user.name == @user.name %> My <%else%> <%=@user.name%>'s <%end %>Projects</h3>
 	</div>
-	<% @owned_projects.each do |project| %>
-	<div class="four columns">
-		<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
+	<div class="owned_projects">
+	<% if @owned_projects.count > 0 %>
+		<% @owned_projects.each do |project| %>
+		<div class="four columns">
+			<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
+		</div>
+		<% end %>
+		<div class="sixteen columns">
+			<%= paginate @owned_projects, :remote => true %> 
+		</div>
+	<% else %>
+		<div class="sixteen columns">
+			no Projects yet
+		</div>	
+	<% end %>
 	</div>
+	
+	<div class="sixteen columns">
+		<h3><% if current_user.name == @user.name %> My <%else%> <%=@user.name%>'s <%end %>Supports</h3>
+	</div>
+	<% if @supported_projects.count > 0 %>
+		<% @supported_projects.each do |project| %>
+		<div class="four columns">
+			<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
+		</div>
+	<% end %>
+	<% else %>
+		<div class="sixteen columns">
+			no supported Projects yet
+		</div>
 	<% end %>
 	
 	<div class="sixteen columns">
-		<h3>Supports</h3>
+		<h3><% if current_user.name == @user.name %> My <%else%> <%=@user.name%>'s <%end %>Favourites</h3>
 	</div>
-	<% @supported_projects.each do |project| %>
-	<div class="four columns">
-		<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
-	</div>
+	<% if @supported_projects.count > 0 %>
+		<% @favourite_projects.each do |project| %>
+		<div class="four columns">
+			<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
+		</div>
+		<% end %>
+	<% else %>
+		<div class="sixteen columns">
+			no favourite Projects yet
+		</div>
 	<% end %>
-	
-	<div class="sixteen columns">
-		<h3>Favourites</h3>
-	</div>
-	<% @favourite_projects.each do |project| %>
-	<div class="four columns">
-		<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
-	</div>
-	<% end %>
-	
-	<div class="sixteen columns">
-		<ul class="tabs">
-			<li><a href="#t1" class="active">Inbox</a></li>
-			<li><a href="#t2">Outbox</a></li>
-		</ul>
-		<ul class="tabs-content">
-			<li id="t1" class="active">	
-				<table width=100%>
-					<tr>
-						<th>Subject</th>
-						<th>Message</th>
-						<th>Sender</th>
-						<th></th>
-					</tr>
-					<% @messages_received.each do |message| %>
-					<tr>
-						
-						<td><%= message.subject %></td>
-						<td><%= message.content %></td>
-						<td><%= User.find(message.sender).name %></td>
-						<td><%= link_to 'Reply', message_path(message.sender)%>	</td>
-					<tr>
-					<% end %>
-				</table>			
-			</li>
-			<li id="t2">
-				<table width=100%>
-					<tr>
-						<th>Subject</th>
-						<th>Message</th>
-						<th>Recipient</th>
-						<th></th>
-					</tr>
-					<% @messages_sent.each do |message| %>
-					<tr>
-						
-						<td><%= message.subject %></td>
-						<td><%= message.content %></td>
-						<td><%= User.find(message.recipient).name %></td>
-						<td></td>
-					<tr>
-					<% end %>
-				</table>
-			</li>
-		</ul>
-			
-	</div>		
 </div>

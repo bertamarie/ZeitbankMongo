@@ -1,0 +1,21 @@
+[2013-01-15 00:27:02,594][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-15 13:37:24,703][INFO ][monitor.jvm              ] [Jackhammer] [gc][ParNew][228088][14188] duration [878ms], collections [1]/[1.3s], total [878ms]/[31.2s], memory [184.8mb]->[158mb]/[1019.8mb], all_pools {[Code Cache] [5mb]->[5mb]/[48mb]}{[Par Eden Space] [27mb]->[260.8kb]/[33.3mb]}{[Par Survivor Space] [130.3kb]->[79.1kb]/[4.1mb]}{[CMS Old Gen] [157.7mb]->[157.7mb]/[982.4mb]}{[CMS Perm Gen] [37.7mb]->[37.7mb]/[82mb]}
+[2013-01-15 21:22:58,217][INFO ][node                     ] [Jackhammer] {0.20.1}[13634]: stopping ...
+[2013-01-15 21:23:00,758][INFO ][node                     ] [Jackhammer] {0.20.1}[13634]: stopped
+[2013-01-15 21:23:00,758][INFO ][node                     ] [Jackhammer] {0.20.1}[13634]: closing ...
+[2013-01-15 21:23:00,884][INFO ][node                     ] [Jackhammer] {0.20.1}[13634]: closed

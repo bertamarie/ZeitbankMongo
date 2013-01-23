@@ -3,9 +3,9 @@ class User
   include Mongoid::Paperclip
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
-  # :lockable, :timeoutable and :omniauthable
+  # :lockable, :trackable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+         :recoverable, :rememberable, :validatable
          
   has_mongoid_attached_file :image,
               :styles => { :thumb  => "50x50#",
@@ -15,12 +15,17 @@ class User
                :path => ":rails_root/public/assets/users/:id/:style/:filename",
                :url => "/assets/users/:id/:style/:filename",
                :default_url => "users/default/:style/default.png"
+               
+  field :biography, type: String 
+  field :website, type: String 
+  field :facebook, type: String 
+  field :twitter, type: String 
 
   ## Database authenticatable
   field :name
   validates_presence_of :name
   validates_uniqueness_of :name, :email, :case_sensitive => false
-  attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :image
+  attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :image, :biography, :website, :facebook, :twitter
   
   field :email,              :type => String, :default => ""
   field :encrypted_password, :type => String, :default => ""
@@ -36,11 +41,11 @@ class User
   field :remember_created_at, :type => Time
 
   ## Trackable
-  field :sign_in_count,      :type => Integer, :default => 0
-  field :current_sign_in_at, :type => Time
-  field :last_sign_in_at,    :type => Time
-  field :current_sign_in_ip, :type => String
-  field :last_sign_in_ip,    :type => String
+  #field :sign_in_count,      :type => Integer, :default => 0
+  #field :current_sign_in_at, :type => Time
+  #field :last_sign_in_at,    :type => Time
+  #field :current_sign_in_ip, :type => String
+  #field :last_sign_in_ip,    :type => String
 
   ## Confirmable
   # field :confirmation_token,   :type => String

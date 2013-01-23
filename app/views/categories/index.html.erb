@@ -28,10 +28,11 @@
 						</div>	
 						
 						<% category_projects.each do |project| %>
-						<!-- Delete all fans, supporter and likes -->
+						<!-- Delete all fans, supporter, taks and likes -->
 						<% if false %>
-							<% project.fans = nil %>
-							<% project.supporter = nil %>
+							<% project.update_attribute("fans", nil) %>
+							<% project.update_attribute("supporter", nil) %>
+							<% project.update_attribute("tasks", nil) %>
 							<% project.update_attribute("likes", 0) %>
 						<% end %>
 						

@@ -1,13 +1,27 @@
 class UsersController < ApplicationController
   before_filter :authenticate_user!, :except => [:show]
 
+  def messages
+    @user = User.find(params[:id])
+    @messages_received = Message.where('recipient' => @user.id.to_s)
+    @messages_sent = Message.where('sender' => @user.id.to_s)
+    respond_to do |format|
+        format.html
+        format.json { head :no_content }
+    end
+  end
+  
   def show
     @user = User.find(params[:id])
     @favourite_projects = Project.where('fans.user_id' => @user.id.to_s)
-    @owned_projects = Project.where('owner' => @user.id.to_s)
+    @owned_projects = Project.where('owner' => @user.id.to_s).page(params[:page]).per(4)
     @supported_projects = Project.where('supporter' => @user.id.to_s)
     @messages_received = Message.where('recipient' => @user.id.to_s)
     @messages_sent = Message.where('sender' => @user.id.to_s)
+    respond_to do |format|
+       format.html # show.html.erb
+       format.js
+    end
   end
   
   def update

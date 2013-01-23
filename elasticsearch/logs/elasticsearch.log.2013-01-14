@@ -1,0 +1,1756 @@
+[2013-01-14 00:00:39,495][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 00:04:39,735][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 00:08:39,995][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 00:12:40,295][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 00:16:40,553][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 00:20:40,847][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 00:24:41,095][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 00:28:41,398][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 00:32:41,690][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 00:36:41,895][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 00:40:42,195][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 00:44:42,495][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 00:48:42,798][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 00:52:43,098][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 09:33:21,949][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 09:37:22,257][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 09:41:22,554][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 09:45:22,857][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 09:49:23,156][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 09:53:23,462][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 09:57:23,760][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 10:01:24,157][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 10:05:24,459][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 10:18:30,796][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 10:22:31,095][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 10:26:31,395][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 10:30:31,694][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 10:34:31,996][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 10:38:32,296][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 10:42:32,595][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 10:46:32,895][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 10:50:33,196][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 10:54:33,554][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 10:58:33,854][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 11:02:34,155][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 11:06:34,465][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 11:10:34,754][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 11:14:35,053][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 11:18:35,353][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 11:22:35,654][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 11:26:35,954][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 11:30:36,252][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 11:34:36,548][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 11:39:01,298][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 11:57:05,614][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0x7f37a90c]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:652)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 11:57:05,615][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0x3747c800]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:652)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 11:57:05,615][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0x8eec2d34]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:655)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 11:57:05,616][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0xa3b73d00]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:655)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 11:57:05,616][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0x562cc832]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:655)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 11:57:05,617][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0xba9b4d4a]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:655)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 11:57:05,617][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0xd44d0775]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:655)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 11:57:05,617][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0x8f3e4ac8]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:655)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 11:57:05,618][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0x3fccf4ac]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:658)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 12:00:25,852][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 12:04:26,156][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 12:11:57,702][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0xb42cba9a]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:652)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 12:11:57,702][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0x53b7b6e7]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:652)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 12:11:57,703][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0x1bed60dc]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:655)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 12:11:57,703][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0x2c37ccfb]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:655)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 12:11:57,704][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0x57b6a599]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:655)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 12:11:57,704][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0x749bb033]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:655)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 12:11:57,705][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0xbec6537d]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:655)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 12:11:57,705][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0x7311f8ce]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:655)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 12:11:57,706][WARN ][transport.netty          ] [Jackhammer] exception caught on transport layer [[id: 0x42582436]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:658)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[2013-01-14 12:11:57,706][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:532)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:148)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:111)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:568)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:642)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:652)
+	... 7 more
+[2013-01-14 12:15:57,996][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 12:19:58,296][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 12:23:58,670][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 12:27:58,956][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 12:31:59,257][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 12:35:59,556][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 12:39:59,852][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 12:44:00,149][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 12:48:00,452][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 12:52:00,757][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 12:56:01,095][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 13:00:01,395][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 13:04:01,695][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 13:08:01,996][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 13:12:02,295][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 13:16:02,595][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 13:20:02,896][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 13:24:03,195][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 13:28:03,494][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 13:32:03,795][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 13:36:04,095][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 13:40:04,395][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 13:44:04,695][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 13:48:04,995][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 13:52:05,295][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 13:56:05,595][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 14:00:05,896][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 14:04:06,194][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 14:08:06,495][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 14:12:06,796][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 14:16:07,095][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 14:20:07,395][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 14:24:07,696][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 14:28:07,996][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 14:32:08,295][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 14:36:08,595][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 14:40:08,895][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 14:44:09,195][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 14:48:09,495][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 14:52:09,797][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-01-14 14:56:10,095][WARN ][cluster.service          ] [Jackhammer] failed to reconnect to node [Jackhammer][6e6ColoyQwC1QR69ogyRnw][inet[/192.168.2.13:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Jackhammer][inet[/192.168.2.13:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:665)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:604)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:574)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:127)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:395)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.ConnectException: connection timed out
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processConnectTimeout(NioClientSocketPipelineSink.java:484)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:369)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
