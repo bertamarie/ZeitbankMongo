@@ -1,9 +1,9 @@
 
 <% if user_signed_in? %>
-  <%= link_to current_user.name, user_path(current_user) %>
-  <%= link_to "Messages", { :controller => "users", :action => "messages", :id => current_user} %>
-  <%= link_to('Logout', destroy_user_session_path, :method=>'delete', :class => 'button' ) %>   
+  <%= link_to raw(" <img src=\"/assets/user.png\" title=\"#{current_user.name}\" /> "), user_path(current_user), :class => "user_button"  %>
+  <%= link_to raw(" <img src=\"/assets/mail.png\" /> "), { :controller => "users", :action => "messages", :id => current_user}, :class => "mail_button" %>
+  <%= link_to('Log out', destroy_user_session_path, :method=>'delete') %>   
 <% else %>
-  <%= link_to('Login', new_user_session_path, :class => 'button' ) %>
+  <%= link_to('Log in', new_user_session_path ) %> or 
   <%= link_to('Sign up', new_user_registration_path, :class => 'button' ) %>
 <% end %>

@@ -1,0 +1,14 @@
+<% if @favoured_projects.count > 0 %>
+	<% @favoured_projects.each do |project| %>
+	<div class="four columns">
+		<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
+	</div>
+	<% end %>
+	<div class="sixteen columns">
+		<%= paginate @favoured_projects, :remote => true %> 
+	</div>
+<% else %>
+	<div class="sixteen columns">
+		no Projects yet
+	</div>	
+<% end %>

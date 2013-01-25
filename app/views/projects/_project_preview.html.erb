@@ -1,5 +1,6 @@
-<%= link_to(project) do %>					
-<div class="project <%= project.id %> project_preview">					
+					
+<div class="project <%= project.id %> project_preview">
+	<%= link_to(project) do %>					
 	<div class="project-img">									
 		<%= image_tag project.image.url(:medium) %>											    
 	</div>				
@@ -7,8 +8,19 @@
 		<h5 class="project-title"><%= project.title%></h5>					
 		<p class="project-description"><%= project.description%></p>				
 	</div>	
-
+	<% end %>
+	<span class="project_categories">	
+		<% @cats = project.categories.asc(:name)%>
+		<%if(@cats.size <= 1)%>
+			 Category: 
+		<% else %>
+		     Categories: 
+		<% end %>
+		<% @cats.each do |cat| %>
+			<% cat = Category.find(cat.id)%>
+			<%= link_to cat.name %>
+		<% end %>
+	</span>	<br />
 	<span class="love_counter"><%= render :partial => 'shared/love_counter', :locals => {:@project => project} %></span>
 	<span class="love_unlove"><%= render :partial => 'shared/love_unlove_button', :locals => {:@project => project} %></span>							
 </div>	
-<% end %>

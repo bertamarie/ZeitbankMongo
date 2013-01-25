@@ -21,7 +21,7 @@
 							<% end %>
 							<% @cats.each do |cat| %>
 								<% cat = Category.find(cat.id)%>
-								<%= link_to cat.name, cat %>
+								<%= link_to cat.name, {:controller => "categories", :action => "show_single", :id => cat.id} %>
 							<% end %>
 						</span>
 						<% if user_signed_in? %>
@@ -34,9 +34,9 @@
 					</div>    							
 				</div>
 				<div class="box">
-				<h3>Supporter</h3>
-				<ul>
-					<% if project.supporter != nil%>
+				<h3>Supporter</h3>			
+					<% if project.supporter != nil && project.supporter.count > 0%>
+					<ul>
 						<% project.supporter.each do |supporter| %>
 							<% user = User.find(supporter)%>
 							<li class="user_icon">
@@ -46,15 +46,21 @@
 								<% end %>
 							</li>
 						<% end %>
+					</ul>
 					<% else %>
-						no supporter
-					<% end %>
-				</ul> 
+					<p>No supporters yet.
+					<% owner = User.find(project.owner)%>
+						<% if current_user != owner%>
+							Become a supporter, take on a task or donate some time.
+							
+						<% end%>
+					</p>
+					<% end %>			 
 				</div>
  				<div class="box">
-				<h3>Fans</h3>
-				<ul>  
-					<% if project.fans != nil%>
+				<h3>Fans</h3>	 
+					<% if project.fans != nil && project.fans.count > 0%>
+					<ul> 
 						<% project.fans.each do |fan| %>
 							<% user = User.find(fan)%>
 							<li class="user_icon">
@@ -64,8 +70,16 @@
 								<% end %>
 							</li>
 						<% end %>
-					<% end %>		  
-				</ul> 
+					</ul>
+					<% else %>
+					<p>No fans yet.
+					<% owner = User.find(project.owner)%>
+						<% if current_user != owner%>
+							Become a fan. </p>
+							<p><span class="love_unlove"><%= render :partial => 'shared/love_unlove_button', :locals => {:project => project} %></span></p>
+						<% end%>
+					</p>
+					<% end %>					  
 				</div>    	
 			</div>   
 			<div class="six columns omega sidebar">
@@ -110,15 +124,31 @@
 					<span><%= owner.name%></span>
 					<% end %>
 				</p>
-				<p class="user_info">
-					Website: <a href="#">www.ayoka.de</a><br />
-					Facebook: <a href="#"><%= owner.name%> on Facebook</a><br />
-				<% if current_user != owner %>
-					<%= link_to(message_path(owner), :class=>'button') do %>
-					Send <%= owner.name %> a Message
-					<%end%>
-				<% end %>
-				</p>
+				<div class="user_info">
+					<strong>Website:</strong> 
+					<%if owner.website != "" && owner.website != nil %>
+						<%= link_to owner.website, owner.website%>
+					<%else%>
+						no Website available
+					<% end %><br />
+					<strong>Facebook:</strong> 
+					<%if owner.facebook != "" && owner.facebook != nil %>
+						<%= link_to  owner.facebook, owner.facebook%>
+					<%else%>
+						no Facebook connected
+					<% end %><br />
+					<strong>Twitter:</strong> 
+					<%if owner.twitter != "" && owner.twitter != nil %>
+						<%= link_to  owner.twitter, owner.twitter%>
+					<%else%>
+						no Twitter connected
+					<% end %><br />
+					<% if current_user != owner %>
+						<%= link_to(message_path(owner), :class=>'button') do %>
+						Send <%= owner.name %> a Message
+						<%end%>
+					<% end %>
+				</div>
 				</div>
 			</div> 
 		</div>

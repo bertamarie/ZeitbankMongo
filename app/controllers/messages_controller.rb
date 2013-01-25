@@ -13,7 +13,16 @@ class MessagesController < ApplicationController
 
   # GET /messages/1
   # GET /messages/1.json
-  def show
+  def show_in
+    @message = Message.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @message }
+    end
+  end
+  
+  def show_out
     @message = Message.find(params[:id])
 
     respond_to do |format|
@@ -46,7 +55,7 @@ class MessagesController < ApplicationController
 
     respond_to do |format|
       if @message.save
-        format.html { redirect_to @user, notice: 'Message was successfully created.' }
+        format.html { redirect_to :controller=>'users', :action => 'messages', :id => @user }
         format.json { render json: @user, status: :created, location: @user }
       else
         format.html { render action: "new" }

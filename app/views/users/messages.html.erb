@@ -19,8 +19,8 @@
 				<% @messages_received.each do |message| %>
 				<tr>					
 					<td><%= User.find(message.sender).name %></td>
-					<td><%= link_to message.subject, {:controller => "messages", :action => "show", :id => message.id} %></td>
-					<td></td>
+					<td><%= link_to message.subject, {:controller => "messages", :action => "show_in", :id => message.id} %></td>
+					<td><%= message.created_at%></td>
 					<td><%= link_to 'Reply', message_path(message.sender)%>	</td>
 				<tr>
 				<% end %>
@@ -32,13 +32,12 @@
 					<th>To</th>
 					<th>Subject</th>
 					<th>Date</th>
-					<th></th>
 				</tr>
 				<% @messages_sent.each do |message| %>
 				<tr>
 					<td><%= User.find(message.recipient).name %></td>
-					<td><%= link_to message.subject, {:controller => "messages", :action => "show", :id => message.id} %></td>			
-					<td></td>
+					<td><%= link_to message.subject, {:controller => "messages", :action => "show_out", :id => message.id} %></td>			
+					<td><%= message.created_at%></td>
 				<tr>
 				<% end %>
 			</table>

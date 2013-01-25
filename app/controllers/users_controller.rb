@@ -13,9 +13,9 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find(params[:id])
-    @favourite_projects = Project.where('fans.user_id' => @user.id.to_s)
+    @favourite_projects = Project.where('fans' => @user.id.to_s).page(params[:page]).per(4)
     @owned_projects = Project.where('owner' => @user.id.to_s).page(params[:page]).per(4)
-    @supported_projects = Project.where('supporter' => @user.id.to_s)
+    @supported_projects = Project.where('supporter' => @user.id.to_s).page(params[:page]).per(4)
     @messages_received = Message.where('recipient' => @user.id.to_s)
     @messages_sent = Message.where('sender' => @user.id.to_s)
     respond_to do |format|
@@ -26,7 +26,6 @@ class UsersController < ApplicationController
   
   def update
     @user = User.find(params[:id])
-
     respond_to do |format|
       if @user.update_attributes(params[:user])
         format.html { redirect_to @user, notice: 'User was successfully updated.' }

@@ -219,9 +219,11 @@ input{ font-size: 11px !important; }
 
 h1.title{
 	float: left;
+	background: url("/assets/ring.png") no-repeat center left;
+	background-size: 18px;
 }
 h1.title a, h1.title a:hover{
-	padding: 15px 24px 15px 0;
+	padding: 15px 4px 15px 20px;
 	background: none;
 	color: #FFF;
 	border-right: 1px solid rgba(255, 255, 255, .05);
@@ -258,10 +260,16 @@ table tr td{
 	padding-bottom:8px;
 	float: left;
 }
-.search-button, .search-form{
+.search-form{
 	float: right;
 	margin-bottom: 0 !important;
 	padding-top: 8px;	
+}
+.search-button{
+	margin: 5px 0 0 3px;
+	padding: 1px;
+	height: 20px;
+	vertical-align: middle;
 }
 span.usermenu{
 	float: right;
@@ -293,6 +301,17 @@ h3 span{
 	text-align: right;
 }
 
+.user_button img{
+	padding: 5px;
+	vertical-align: middle;
+	height: 15px;
+}
+.mail_button img{
+	padding: 5px;
+	margin-right: 5px;
+	vertical-align: middle;
+	height: 20px;
+}
 .user_image{
 	width: 150px;
 	border: solid 1px #ddd;
@@ -378,18 +397,55 @@ ul.category_nav li a.active{
 /* ======================================================= */
 /*			Love and Unlove Buttons 					   */
 /* ======================================================= */
-.love, .unlove{
-	font-size: 1.3em !important;
-	margin-bottom: 0 !important;
+.love_button, .unlove_button{
+	display: inline-block;
+	position: relative;
+	height: 24px;
+	margin: 0;
+	padding: 3px 5px 0 3px;
+	border: 1px solid rgb(225,225,225);
+	border-radius: 4px;
+	background-color: #fcfcfc;
+	background-image: -webkit-linear-gradient(top,rgba(255,255,255,.0) 0%,rgba(235,235,235,.3) 60%,rgba(225,225,225,.6) 100%);
+	background-image: -moz-linear-gradient(top,rgba(255,255,255,.0) 0%,rgba(235,235,235,.3) 60%,rgba(225,225,225,.6) 100%);
+	background-image: -o-linear-gradient(top,rgba(255,255,255,.0) 0%,rgba(235,235,235,.3) 60%,rgba(225,225,225,.6) 100%);
+	background-image: linear-gradient(top,rgba(255,255,255,.0) 0%,rgba(235,235,235,.3) 60%,rgba(225,225,225,.6) 100%);
+	background-clip: padding;
+	overflow: hidden;
+	color: #333;
+	text-shadow: 0 1px 0 #fff;
+	white-space: nowrap;
+	vertical-align: baseline;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.02),inset 0 1px 0 rgba(255,255,255,.7),inset -1px 0 0 rgba(255,255,255,.7),inset 0 -1px 0 rgba(255,255,255,.5),inset 1px 0 0 rgba(255,255,255,.7);
+	box-shadow: 0 1px 2px rgba(0,0,0,.02),inset 0 1px 0 rgba(255,255,255,.7),inset -1px 0 0 rgba(255,255,255,.7),inset 0 -1px 0 rgba(255,255,255,.5),inset 1px 0 0 rgba(255,255,255,.7);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
-
-.unlove{
+.unlove_button{
 	text-decoration: line-through !important;
+	padding: 3px;
+	text-shadow: none;
+	border: 1px solid rgb(200,200,200);
+	background-color: #eee;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.0),inset 0 2px 2px rgba(0,0,0,.05),inset 0 1px 1px rgba(0,0,0,.08),inset -2px 0 2px rgba(0,0,0,.03),inset 0 -1px 0 rgba(0,0,0,.02),inset 2px 0 2px rgba(0,0,0,.03);
+	box-shadow: 0 1px 3px rgba(0,0,0,.0),inset 0 2px 2px rgba(0,0,0,.05),inset 0 1px 1px rgba(0,0,0,.08),inset -2px 0 2px rgba(0,0,0,.03),inset 0 -1px 0 rgba(0,0,0,.02),inset 2px 0 2px rgba(0,0,0,.03);
+}
+.love_button img, .unlove_button img{
+		vertical-align: top;
+		border: none;
 }
 
 .love_counter{
 	display: inline-block;
 	padding: 10px 0;
+}
+.love_counter img{
+	vertical-align: top;
 }
 /* ======================================================= */
 /*			Project and User Forms 						   */
@@ -441,6 +497,7 @@ input[type="url"]:focus {
 .form_container input[type="text"], 
 .form_container input[type="password"], 
 .form_container input[type="email"],
+.form_container input[type="url"],
 .form_container textarea,
 .form_container select
  {
@@ -448,7 +505,13 @@ input[type="url"]:focus {
 	margin: 0 auto 20px auto;	
 }
 
+.form_container span.small{
+	display: block;
+	margin-left: 4.2%;
+}
+
 .form_container input[type="file"],
+.form_container input[type="submit"],
 .form_container h3,
 .form_container label{
 	margin-left: 4.2%;	
@@ -471,7 +534,7 @@ input[type="url"]:focus {
 	padding: 10px;
 	background: #fff;
 }
-a:hover .project_preview {
+.project_preview:hover {
 	box-shadow: 0 0 6px 1px #ddd;
 }
 .project_preview .project-title{
@@ -489,8 +552,8 @@ a:hover .project_preview {
 .project_preview .project-img img{
 	max-height: 150px;
 }
-a .project_preview{
-	color: #444;
+.project_preview a {
+	color: #444 !important;
 }
 /* ======================================================= */
 /*			Project View 								   */

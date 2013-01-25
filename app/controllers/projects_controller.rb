@@ -47,8 +47,8 @@ class ProjectsController < ApplicationController
   # GET /projects.json
   
   def index
-    #@projects = Project.all
-    @projects = Project.search(params)
+    @projects = Project.all
+    #@projects = Project.search(params)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -89,8 +89,13 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(params[:project])
     @cat_ids = params[:category_ids]
-    @cat_ids.each do |cat_id|
-      cat = Category.find(cat_id)
+    if( @cat_ids != nil)
+      @cat_ids.each do |cat_id|
+        cat = Category.find(cat_id)
+        cat.projects << @project
+      end
+    else
+      cat = Category.find("5102a64a4ba8076ced000001")
       cat.projects << @project
     end
     

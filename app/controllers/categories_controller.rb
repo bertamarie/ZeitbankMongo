@@ -19,6 +19,13 @@ class CategoriesController < ApplicationController
        format.js
     end
   end
+  
+  def show_single
+    @category = Category.find(params[:id])
+    respond_to do |format|
+       format.html # show.html.erb
+    end
+  end
 
   # GET /categories/new
   # GET /categories/new.json

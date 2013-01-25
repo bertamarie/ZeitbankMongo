@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="columns eight form_container">
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>To:</strong>
+	<% user = User.find(@message.recipient) %>
+	<%= link_to(user_path(user)) do %>
+  	<%= user.name %>
+	<% end %>
+</p>
+<p>
+  <strong>Subject:</strong>
+  <%= @message.subject %>
+</p>
+
+<p>
+  <%= @message.content %>
+</p>
+<%=link_to "Back", :back, :class => "button" %>
+
+</div>
+</div>

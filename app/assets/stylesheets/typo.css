@@ -55,3 +55,7 @@ label, legend {
 #section-footer a{
 	text-decoration: none;
 }
+
+.small{
+	font-size: 0.85em;
+}

@@ -1,0 +1,13 @@
+<!-- 960 Container -->
+<div class="container">	
+	<div class="thirteen columns">
+		<h3><%= @category.name %></h3>
+	</div>
+	<% @category.projects.each do |project| %>
+		<div class="four columns">
+			<%= render :partial => 'projects/project_preview', :locals => {:project => project} %>	
+		</div>
+	<% end %>
+</div>
+
+
