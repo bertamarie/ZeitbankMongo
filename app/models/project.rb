@@ -24,6 +24,8 @@ class Project
   field :title, type: String
   field :description, type: String   
   field :likes, type: Integer, default: 0
+  field :time_budget, type: Integer, default: 0
+  field :donated_time, type: Integer, default: 0
   field :owner, type: String
   field :supporter, type: Array     
   field :fans, type: Array       

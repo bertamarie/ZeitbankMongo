@@ -20,6 +20,12 @@
 					return false;
 			});
 			
+			$('.task_list dt').click(function(e){
+			    $(this).nextUntil('dt').slideToggle();
+			});
+
+			$('.task_list dd').hide();
+			
 	      $('.flexslider').flexslider({
 	        animation: "slide"
 	      });

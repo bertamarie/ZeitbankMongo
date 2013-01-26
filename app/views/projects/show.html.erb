@@ -24,6 +24,7 @@
 								<%= link_to cat.name, {:controller => "categories", :action => "show_single", :id => cat.id} %>
 							<% end %>
 						</span>
+						<span class="project_time">Time donated: <%= project.donated_time %> of <%= project.time_budget %></span>
 						<% if user_signed_in? %>
 							<% if project.owner == current_user.id.to_s%>
 								<span class="project_edit">
@@ -51,8 +52,7 @@
 					<p>No supporters yet.
 					<% owner = User.find(project.owner)%>
 						<% if current_user != owner%>
-							Become a supporter, take on a task or donate some time.
-							
+							Become a supporter, take on a task.						
 						<% end%>
 					</p>
 					<% end %>			 
@@ -62,27 +62,32 @@
 				</div>    	
 			</div>   
 			<div class="six columns omega sidebar">
-				<div class="box">
+				<div class="box task_list">
 				<h3>Support the project<br /><span>take on a task!</span></h3>
 				<dl>
 				<% if project.tasks != nil%>
-					<% project.tasks.each do |task| %>
-						<dt><%= task.title %></dt> 
+					<% project.tasks.asc(:status).each do |task| %>
+						<dt><%= task.title %> (<%= task.status %>)</dt> 
 						<dd>
 							<%= task.description %><br />
-							status: <%= task.status %> <br />
+							status:  <%= task.status %><br />
 							taken on by: 
 							<% if task.owner != nil %>
-							<% owner = User.find(task.owner)%>
-							<%= link_to owner.name, user_path(owner) %>
+							 <% owner = User.find(task.owner)%>
+							 <%= link_to owner.name, user_path(owner) %>
 							<% else %>
-							Nobody
+							 Nobody
 							<% end %>
 							<% if user_signed_in? %>  
-								<% if (project.owner != current_user.id.to_s && task.status != "taken")%> 
-									<br /><%= link_to "That's my task!", { :controller => "projects", :action => "add_supporter", :id => project.id, :task_id => task.id}, :class => 'button' %>	
+								<% if (project.owner != current_user.id.to_s && task.status == "open")%> 
+									<br /><%= link_to "That's my task", { :controller => "projects", :action => "add_supporter", :id => project.id, :task_id => task.id}, :class => 'button' %>	
 								<% end %>
-							<% end %>		
+							<% end %>	
+							<% if user_signed_in? %>  
+								<% if (project.owner == current_user.id.to_s && task.status == "taken")%> 
+									<br /><%= link_to "Task done", { :controller => "tasks", :action => "task_done", :id => project.id, :task_id => task.id}, :class => 'button' %>	
+								<% end %>
+							<% end %>	
 						</dd>
 					<% end %>
 				<% end %>
@@ -90,7 +95,7 @@
 				
 					<% if user_signed_in? %>   
 						<% if (project.owner == current_user.id.to_s)%>
-						<%= link_to "Add Task", task_path(project)%>
+						<%= link_to "Add Task", task_path(project), :class => 'button'%>
 						<% end %>
 					<% end%>
 				</div>

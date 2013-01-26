@@ -22,6 +22,8 @@
 				<%else%>
 					no Twitter connected
 				<% end %><br />
+				<strong>Time donated:</strong> 
+					<%= @user.time_budget%> <br />
 			</div>
 		</div>
 		<div class="ten columns omega">
@@ -74,6 +76,23 @@
 	<div class="sixteen columns">
 		<%= paginate @supported_projects, :remote => true %> 
 	</div>
+	<% if current_user.name == @user.name %>
+		<div class="sixteen columns">
+			<div class="task_list">
+			<h3>My Tasks </h3>
+			<dl>
+			<% @tasks.each do |task| %>
+				<dt><%= task.title%> (<%= task.status %>)</dt>
+				<dd>
+					<%= task.description%><br />
+					Project: <%= link_to task.project.title, task.project%>
+				</dd>
+
+			<% end %>
+			</dl>
+			</div>
+		</div>
+	<% end %>
 	<% else %>
 		<div class="sixteen columns">
 			no supported projects yet
@@ -96,7 +115,7 @@
 		</div>
 	<% else %>
 		<div class="sixteen columns">
-			no favourite Projects yet
+			no favourite projects yet
 		</div>
 	<% end %>
 	</div>

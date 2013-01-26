@@ -574,14 +574,35 @@ input[type="url"]:focus {
 	text-align: justify;
 }
 
-.project_view .project-meta .project_categories{
+.project_view .project-meta .project_categories,
+.project_view .project-meta .project_time{
 	margin-left: 15px;
 	padding-left: 15px;
 	border-left: 1px solid #ddd;
 }
+
 .project_view .project-meta .project_edit{
 	float: right;
 }
+
+.task_list dl {
+	margin-bottom: 20px;
+}
+.task_list dl dt{
+	margin: 10px 0 5px 0;
+	font-weight: bold;	
+}
+
+.task_list dl dt:hover{
+	cursor: pointer;	
+}
+.task_list dl dd{
+	border: 1px solid #ddd;
+	background: #FFF;
+	border-radius: 5px;
+	padding: 5px;
+}
+
 
 
 

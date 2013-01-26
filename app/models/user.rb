@@ -20,12 +20,13 @@ class User
   field :website, type: String 
   field :facebook, type: String 
   field :twitter, type: String 
+  field :time_budget, type: Integer, default: 0
 
   ## Database authenticatable
   field :name
   validates_presence_of :name
   validates_uniqueness_of :name, :email, :case_sensitive => false
-  attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :image, :biography, :website, :facebook, :twitter
+  attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :image, :biography, :website, :facebook, :twitter, :time_budget
   
   field :email,              :type => String, :default => ""
   field :encrypted_password, :type => String, :default => ""

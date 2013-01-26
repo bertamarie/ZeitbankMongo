@@ -1,4 +1,20 @@
 class TasksController < ApplicationController
+  
+  def task_done
+    @project = Project.find(params[:id])  
+    @task = @project.tasks.find(params[:task_id])
+    @owner = User.find(@task.owner)
+    @project.update_attribute("donated_time", @project.donated_time + @task.time_value)
+    @owner.update_attribute("time_budget", @owner.time_budget + @task.time_value)
+    @task.update_attribute(:status, "done")
+     
+    
+    respond_to do |format|
+      format.html { redirect_to @project, notice: 'Task done.' }
+      format.json { render json: @project }
+    end
+  end
+  
   # GET /tasks
   # GET /tasks.json
   def index
@@ -42,8 +58,9 @@ class TasksController < ApplicationController
   def create
     #@project = Project.where(_id: Moped::BSON::ObjectId("50cf8b9e4ba807e959000006"))
    @project = Project.find(params[:task][:project])
-   @task = Task.new(:title => params[:task][:title], :description => params[:task][:description], :status => "open")
+   @task = Task.new(:title => params[:task][:title], :description => params[:task][:description], :time_value => params[:task][:time_value], :status => "open")
    @task.project = @project
+   @project.update_attribute("time_budget", @project.time_budget + @task.time_value )
 
     respond_to do |format|
       if @task.save
