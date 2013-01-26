@@ -25,8 +25,9 @@ class ProjectsController < ApplicationController
      @project.add_to_set(:fans, @user.id.to_s)    
      
      respond_to do |format|
-       format.html { redirect_to @project, notice: 'Fan was successfully added.' }
-       format.json { render json: @project }
+       format.js
+       #format.html { redirect_to @project, notice: 'Fan was successfully added.' }
+       #format.json { render json: @project }
      end
   end 
   
@@ -38,8 +39,9 @@ class ProjectsController < ApplicationController
      @project.pull(:fans, @user.id.to_s)  
      
      respond_to do |format|
-       format.html { redirect_to @project, notice: 'Fan was successfully added.' }
-       format.json { render json: @project }
+       format.js
+       #format.html { redirect_to @project, notice: 'Fan was successfully added.' }
+       #format.json { render json: @project }
      end
   end
   

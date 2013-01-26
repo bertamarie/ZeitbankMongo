@@ -1,7 +1,7 @@
 <% if (user_signed_in? && @project.owner != current_user.id.to_s) %>        
 	<% if @project.fans != nil && @project.fans.include?(current_user.id.to_s) %>
-		<%= link_to raw(" <img src=\"/assets/heart_b.png\" /> "), {:controller => 'projects', :action => 'unlike', :id => @project.id}, :class => 'unlove_button' %> 
+		<%= link_to raw(" <img src=\"/assets/heart_b.png\" /> "), {:controller => 'projects', :action => 'unlike', :id => @project.id}, :class => 'unlove_button', :remote => true %> 
 	<% else %>
-		<%= link_to raw(" <img src=\"/assets/heart_b.png\" /> <span>Like</span> "), {:controller => 'projects', :action => 'like', :id => @project.id}, :class => 'love_button' %>
+		<%= link_to raw(" <img src=\"/assets/heart_b.png\" /> <span>Like</span> "), {:controller => 'projects', :action => 'like', :id => @project.id}, :class => 'love_button', :remote => true %>
     <% end %>  
 <%end%>

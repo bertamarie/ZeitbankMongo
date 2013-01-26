@@ -1,0 +1,3 @@
+$('.<%= @project.id %> .love_unlove').html('<%= escape_javascript render("shared/love_unlove_button") %>');
+$('.<%= @project.id %> .love_counter').html('<%= escape_javascript render("shared/love_counter") %>');
+$('.fans').html('<%= escape_javascript render("project_fans") %>');

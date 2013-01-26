@@ -1,0 +1,22 @@
+<h3>Fans</h3>	 
+	<% if @project.fans != nil && @project.fans.count > 0%>
+	<ul> 
+		<% @project.fans.each do |fan| %>
+			<% user = User.find(fan)%>
+			<li class="user_icon">
+				<%= link_to(user_path(user)) do%>
+				<%=image_tag(user.image(:thumb)) %><br />
+				<%= user.name%>
+				<% end %>
+			</li>
+		<% end %>
+	</ul>
+	<% else %>
+	<p>No fans yet.
+	<% owner = User.find(@project.owner)%>
+		<% if current_user != owner%>
+			Become a fan. </p>
+			<p><span class="love_unlove"><%= render :partial => 'shared/love_unlove_button', :locals => {:@project => @project} %></span></p>
+		<% end%>
+	</p>
+	<% end %>
