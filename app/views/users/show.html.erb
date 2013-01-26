@@ -37,7 +37,7 @@
 			<% end %>
 		</div>
 	</div>
-	<div class="sixteen columns text_right">
+	<div class="sixteen columns">
 		<% if user_signed_in? && current_user.name == @user.name %>
 		  <%= link_to('Edit Profile', edit_user_registration_path, :class => 'button' )%>
 		<% end %>

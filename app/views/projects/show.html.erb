@@ -25,6 +25,7 @@
 							<% end %>
 						</span>
 						<span class="project_time">Time donated: <%= project.donated_time %> of <%= project.time_budget %></span>
+						<span class="project_city">City: <%= project.city %></span>
 						<% if user_signed_in? %>
 							<% if project.owner == current_user.id.to_s%>
 								<span class="project_edit">

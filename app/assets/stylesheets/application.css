@@ -26,6 +26,7 @@ body{
 	background: url(images/noise-white.png) !important;
 	position: relative;
 	z-index: 1;
+	font-weight: 300;
 } 
 
 body:after, 
@@ -121,6 +122,7 @@ input{ font-size: 11px !important; }
 	border-bottom: 2px solid #ddd;
 	background: #333;
 	background: url(images/bg.gif);
+	margin-bottom: 30px;
 }
 
 #section-tophat:after, #section-footer:after{
@@ -135,6 +137,9 @@ input{ font-size: 11px !important; }
 	z-index: -1;
 }
 #section-tophat{padding: 0;}
+#section-tophat .columns{
+	margin: 0;
+}
 
 
 /* #FOOTER */
@@ -221,27 +226,32 @@ h1.title{
 	float: left;
 	background: url("/assets/ring.png") no-repeat center left;
 	background-size: 18px;
+
 }
 h1.title a, h1.title a:hover{
 	padding: 15px 4px 15px 20px;
 	background: none;
 	color: #FFF;
-	border-right: 1px solid rgba(255, 255, 255, .05);
-}
-#section-tophat .columns{
-	margin: 0;
+
 }
 a.nav_link{
+	
 	display: block;
 	padding: 7px 10px;
 	width: 35%;
 	float: left;
-	text-align: center;
-	border-right: 1px solid rgba(255, 255, 255, .05);	
-	border-left: 1px solid rgba(0, 0, 0, .05);
+	text-align: center;	
+	border-left: 1px solid rgba(255, 255, 255, .05);
 	border-width: 0 1px;
 	font-size: 1.1em;
 }
+a.nav_link.first {
+	margin-left: 5px;
+}
+a.nav_link.last{
+	border-right: 1px solid rgba(255, 255, 255, .05);
+}
+
 
 table tr th{
 	border-bottom: 1px solid #ddd;
@@ -466,7 +476,8 @@ ul.category_nav li a.active{
 	float: left;
 }
 
-input[type="url"]{
+input[type="url"],
+input[type="number"]{
 	border: 1px solid #ddd;
 	padding: 6px 4px;
 	outline: none;
@@ -482,7 +493,7 @@ input[type="url"]{
 	margin-bottom: 20px;
 	background: #fff; 
 }
-input[type="url"]:focus {
+input[type="url"]:focus, input[type="number"]:focus {
 	border: 1px solid #aaa;
 	color: #444;
 	-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
@@ -498,6 +509,7 @@ input[type="url"]:focus {
 .form_container input[type="password"], 
 .form_container input[type="email"],
 .form_container input[type="url"],
+.form_container input[type="number"], 
 .form_container textarea,
 .form_container select
  {
@@ -516,8 +528,7 @@ input[type="url"]:focus {
 .form_container label{
 	margin-left: 4.2%;	
 }
-.form_container .checkbox-list,
-.form_container .actions{
+.form_container .checkbox-list{
 	margin-left: 3.5%;	
 }
 /* ======================================================= */
@@ -575,7 +586,8 @@ input[type="url"]:focus {
 }
 
 .project_view .project-meta .project_categories,
-.project_view .project-meta .project_time{
+.project_view .project-meta .project_time,
+.project_view .project-meta .project_city{
 	margin-left: 15px;
 	padding-left: 15px;
 	border-left: 1px solid #ddd;

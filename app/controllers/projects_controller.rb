@@ -49,8 +49,11 @@ class ProjectsController < ApplicationController
   # GET /projects.json
   
   def index
-    @projects = Project.all
-    #@projects = Project.search(params)
+    if params[:query].present?
+      @projects = Project.search(params[:query], load: true)
+    else
+      @projects = Project.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb
