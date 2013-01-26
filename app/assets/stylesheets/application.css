@@ -377,6 +377,12 @@ h3 span{
 .flexslider .slides img{
 	height: 400px;
 }
+.flexslider .slides div{
+	margin: 20px auto;
+	max-width: 500px;
+	font-size: 1.1em;
+}
+
 .flexslider .flex-control-nav {
 	position: absolute;
 	bottom: 0;
