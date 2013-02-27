@@ -1,0 +1,14 @@
+[2013-02-05 19:17:00,357][INFO ][node                     ] [Marvel Girl] {0.20.1}[18906]: initializing ...
+[2013-02-05 19:17:00,381][INFO ][plugins                  ] [Marvel Girl] loaded [], sites []
+[2013-02-05 19:17:08,943][INFO ][node                     ] [Marvel Girl] {0.20.1}[18906]: initialized
+[2013-02-05 19:17:08,943][INFO ][node                     ] [Marvel Girl] {0.20.1}[18906]: starting ...
+[2013-02-05 19:17:09,615][INFO ][transport                ] [Marvel Girl] bound_address {inet[/0:0:0:0:0:0:0:0%0:9300]}, publish_address {inet[/10.0.0.6:9300]}
+[2013-02-05 19:17:13,252][INFO ][cluster.service          ] [Marvel Girl] new_master [Marvel Girl][j5psypv1TL2yolLpIuk1lQ][inet[/10.0.0.6:9300]], reason: zen-disco-join (elected_as_master)
+[2013-02-05 19:17:13,492][INFO ][discovery                ] [Marvel Girl] elasticsearch/j5psypv1TL2yolLpIuk1lQ
+[2013-02-05 19:17:13,571][INFO ][http                     ] [Marvel Girl] bound_address {inet[/0:0:0:0:0:0:0:0%0:9200]}, publish_address {inet[/10.0.0.6:9200]}
+[2013-02-05 19:17:13,571][INFO ][node                     ] [Marvel Girl] {0.20.1}[18906]: started
+[2013-02-05 19:17:15,356][INFO ][gateway                  ] [Marvel Girl] recovered [1] indices into cluster_state
+[2013-02-05 19:54:50,982][INFO ][node                     ] [Marvel Girl] {0.20.1}[18906]: stopping ...
+[2013-02-05 19:54:51,099][INFO ][node                     ] [Marvel Girl] {0.20.1}[18906]: stopped
+[2013-02-05 19:54:51,099][INFO ][node                     ] [Marvel Girl] {0.20.1}[18906]: closing ...
+[2013-02-05 19:54:51,108][INFO ][node                     ] [Marvel Girl] {0.20.1}[18906]: closed

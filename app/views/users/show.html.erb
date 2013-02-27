@@ -1,5 +1,5 @@
 <div class="container">	
-	<div class="sixteen columns">
+	<div class="sixteen columns box">
 		<div class="six columns alpha">
 			<h3><%= @user.name %></h3>
 			<div class="user_image"><%= image_tag @user.image.url(:small)%></div>
@@ -36,15 +36,101 @@
 			</div>
 			<% end %>
 		</div>
+		<div class="sixteen columns">
+			<% if user_signed_in? && current_user.name == @user.name %>
+			  <%= link_to('Edit Profile', edit_user_registration_path, :class => 'button align-right' )%>
+			<% end %>
+		</div>
 	</div>
-	<div class="sixteen columns">
-		<% if user_signed_in? && current_user.name == @user.name %>
-		  <%= link_to('Edit Profile', edit_user_registration_path, :class => 'button' )%>
-		<% end %>
+		
+	<div class="sixteen columns box">
+	<div class="eight columns alpha">
+		<h3><% if user_signed_in? && current_user.name == @user.name %> My <%else%> <%=@user.name%>'s <%end %>Projects</h3>		
+		<% if @owned_projects.count > 0 %>			
+		<ul>
+			<% @owned_projects.each do |project| %>
+				<li class="user_icon">
+					<%= link_to(project, :class => 'tooltip') do%>
+					<span class="tooltip_text"><%= project.title%></span>
+					<%= image_tag(project.image(:thumb))%><br />
+					
+					<% end %>
+				</li>
+			<% end %>
+		</ul>
+		<% else %>
+		<p>no projects yet
+		</p>
+		<% end %>			 
 	</div>
 	
+	<div class="eight columns omega">
+		<h3><% if user_signed_in? && current_user.name == @user.name %> My <%else%> <%=@user.name%>'s <%end %>Favorites</h3>
+		
+		<% if @favourite_projects.count > 0 %>			
+		<ul>
+			<% @favourite_projects.each do |project| %>
+				<li class="user_icon">
+					<%= link_to(project, :class => 'tooltip') do%>
+					<span class="tooltip_text"><%= project.title%></span>
+					<%= image_tag(project.image(:thumb))%><br />
+					<% end %>
+				</li>
+			<% end %>
+		</ul>
+		<% else %>
+		<p>no favourite projects yet
+		</p>
+		<% end %>			 
+	</div>	
+	</div>
+	
+	<div class="sixteen columns box">
+	<div class="eight columns alpha">
+		<h3><% if user_signed_in? && current_user.name == @user.name %> My <%else%> <%=@user.name%>'s <%end %>Supports</h3>
+		
+		<% if @supported_projects.count > 0 %>			
+		<ul>
+			<% @supported_projects.each do |project| %>
+				<li class="user_icon">
+					<%= link_to(project, :class => 'tooltip') do%>
+					<span class="tooltip_text"><%= project.title%></span>
+					<%= image_tag(project.image(:thumb))%><br />
+					<% end %>
+				</li>
+			<% end %>
+		</ul>
+		<% else %>
+		<p>no supported projects yet
+		</p>
+		<% end %>			 
+	</div>
+	
+	<% if user_signed_in? && current_user.name == @user.name %>
+		<div class="eight columns omega">
+			<div class="task_list">
+			<h3>My Tasks </h3>
+			<dl>
+			<% @tasks.each do |task| %>
+				<dt><%= task.title%> (<%= task.status %>)</dt>
+				<dd>
+					<%= task.description%><br />
+					Project: <%= link_to task.project.title, task.project%>
+				</dd>
+
+			<% end %>
+			</dl>
+			</div>
+		</div>
+	<% end %>
+</div>
+	
+	
+	<!-- old view with project preview>
+	
+	
 	<div class="sixteen columns">
-		<h3><% if current_user.name == @user.name %> My <%else%> <%=@user.name%>'s <%end %>Projects</h3>
+		<h3><% if user_signed_in? && current_user.name == @user.name %> My <%else%> <%=@user.name%>'s <%end %>Projects</h3>
 	</div>
 	<div class="owned_projects">
 	<% if @owned_projects.count > 0 %>
@@ -64,7 +150,7 @@
 	</div>
 	
 	<div class="sixteen columns">
-		<h3><% if current_user.name == @user.name %> My <%else%> <%=@user.name%>'s <%end %>Supports</h3>
+		<h3><% if user_signed_in? && current_user.name == @user.name %> My <%else%> <%=@user.name%>'s <%end %>Supports</h3>
 	</div>
 	<div class="supported_projects">
 	<% if @supported_projects.count > 0 %>
@@ -76,7 +162,7 @@
 	<div class="sixteen columns">
 		<%= paginate @supported_projects, :remote => true %> 
 	</div>
-	<% if current_user.name == @user.name %>
+	<% if user_signed_in? && current_user.name == @user.name %>
 		<div class="sixteen columns">
 			<div class="task_list">
 			<h3>My Tasks </h3>
@@ -101,7 +187,7 @@
 	</div>
 	
 	<div class="sixteen columns">
-		<h3><% if current_user.name == @user.name %> My <%else%> <%=@user.name%>'s <%end %>Favourites</h3>
+		<h3><% if user_signed_in? && current_user.name == @user.name %> My <%else%> <%=@user.name%>'s <%end %>Favourites</h3>
 	</div>
 	<div class="favourite_projects">
 	<% if @favourite_projects.count > 0 %>
@@ -119,4 +205,5 @@
 		</div>
 	<% end %>
 	</div>
+	<!-- end old view -->
 </div>

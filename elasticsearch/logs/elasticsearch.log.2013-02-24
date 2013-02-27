@@ -1,0 +1,10 @@
+[2013-02-24 13:08:42,811][INFO ][node                     ] [Mammomax] {0.20.1}[33014]: initializing ...
+[2013-02-24 13:08:42,880][INFO ][plugins                  ] [Mammomax] loaded [], sites []
+[2013-02-24 13:08:48,936][INFO ][node                     ] [Mammomax] {0.20.1}[33014]: initialized
+[2013-02-24 13:08:48,937][INFO ][node                     ] [Mammomax] {0.20.1}[33014]: starting ...
+[2013-02-24 13:08:49,243][INFO ][transport                ] [Mammomax] bound_address {inet[/0:0:0:0:0:0:0:0%0:9300]}, publish_address {inet[/192.168.2.3:9300]}
+[2013-02-24 13:08:52,523][INFO ][cluster.service          ] [Mammomax] new_master [Mammomax][zyXFbbRhT5OO0f20AbePoA][inet[/192.168.2.3:9300]], reason: zen-disco-join (elected_as_master)
+[2013-02-24 13:08:52,693][INFO ][discovery                ] [Mammomax] elasticsearch/zyXFbbRhT5OO0f20AbePoA
+[2013-02-24 13:08:52,743][INFO ][http                     ] [Mammomax] bound_address {inet[/0:0:0:0:0:0:0:0%0:9200]}, publish_address {inet[/192.168.2.3:9200]}
+[2013-02-24 13:08:52,744][INFO ][node                     ] [Mammomax] {0.20.1}[33014]: started
+[2013-02-24 13:08:54,589][INFO ][gateway                  ] [Mammomax] recovered [1] indices into cluster_state

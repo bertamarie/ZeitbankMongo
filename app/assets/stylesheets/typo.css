@@ -5,6 +5,7 @@
 
 body{ 
 	font: 13px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	font-weight: 300;
 	color: #555;
 	}
 
@@ -16,8 +17,12 @@ a:hover .project {opacity: 1;}
 /* Headline Text */	 
 h1, h2, h3, h4, h5, h6 {  
 	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
-	font-weight: bold; 
+	font-weight: 300; 
 	color: #222; 
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-weight: 300;
 }	
 	 
 h5 { 

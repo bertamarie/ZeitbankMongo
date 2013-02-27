@@ -13,5 +13,6 @@ module ApplicationHelper
   def love_counter(project)
     raw("<span class=\"love_counter\">&hearts; #{project.likes}</span>")
   end
+  
 end
 

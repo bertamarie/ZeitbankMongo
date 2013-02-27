@@ -16,9 +16,9 @@ class UsersController < ApplicationController
     @favourite_projects = Project.where('fans' => @user.id.to_s).page(params[:page]).per(4)
     @owned_projects = Project.where('owner' => @user.id.to_s).page(params[:page]).per(4)
     @supported_projects = Project.where('supporter' => @user.id.to_s).page(params[:page]).per(4)
-    
+    @tasks=[]
     @supported_projects.each do |project|
-      @tasks = (project.tasks.where('owner' => @user.id.to_s))
+      @tasks += (project.tasks.where('owner' => @user.id.to_s))
     end
     respond_to do |format|
        format.html # show.html.erb

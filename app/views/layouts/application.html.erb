@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>Zeit und Zeug</title>
-	<%= favicon_link_tag '/assets/ring.png' %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <%= favicon_link_tag '/assets/ring.png' %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
   <%= javascript_include_tag "application.js", "rails.js" %>
@@ -48,21 +49,21 @@
 	<!-- 960 Container -->
 	<div class="container">			
 		<div class="sixteen columns">
-			<div class="columns three alpha">
-				<h1 class="title"><%= link_to('Zeit und Zeug', home_url) %></h1>
+			<div class="columns eight">
+				<h1 class="title"><%= link_to('Zeit und Zeug', home_url) %></h1>	
+				<nav>
+					<%= link_to(categories_path,  :class => 'nav_link first') do %>
+					  Explore<br />Projects
+					<% end %>
+					<%= link_to(new_project_path, :class => 'nav_link last') do%>
+					  Start<br />Project
+					<% end %>
+				</nav>
 			</div>
-			<nav class="columns three">
-			<%= link_to(categories_path,  :class => 'nav_link first') do %>
-			  Explore<br />Projects
-			<% end %>
-			<%= link_to(new_project_path, :class => 'nav_link last') do%>
-			  Start<br />Project
-			<% end %>
-		</nav>
-			<div class="columns six">
-				<%= render 'shared/search' %>
+			<div class="columns eight">
+				<%= render 'shared/search' %>		
+				<span class="usermenu"><%= render 'users/user_navigation' %></span>
 			</div>
-			<span class="usermenu columns four omega"><%= render 'users/user_navigation' %></span>
 		</div>		
 	</div>	
 </div>
@@ -79,7 +80,7 @@
 		<div class="sixteen columns" id="header">			
 			<br />			
 			<!-- 1/4 -->
-			<div class="four columns alpha">
+			<div class="five columns alpha">
 				<h5>Zeit und Zeug</h5>
 				<p>Zeit und Zeug is a funding and supporting platform for all kinds of projects.</p>
 
@@ -91,40 +92,40 @@
 						
 			<!-- 2/4 -->
 			
-			<div class="four columns">		
-				<h5>Contact</h5>			
-				<form action="#" method="post">
-					<fieldset>
-						<input type="email" id="email" placeholder="Enter your email address" />
-						<textarea id="message" placeholder="Write us a message"></textarea>
-						<input type="submit" value="Send message" />
-					</fieldset>
-				</form>
-				
-				<p>Facebook Twitter</p>	
-
-			</div>
 			<!-- /End 2/4 -->
 			<!-- 3/4 -->
-			<div class="four columns">
+			<div class="six columns">
 				<h5>Categories</h5>
+				<div class="three columns alpha">
 				<ul>
 					<li><a href="#">Art</a></li>
 					<li><a href="#">Film</a></li>
 					<li><a href="#">Theater</a></li>
 					<li><a href="#">Computer</a></li>
+					<li><a href="#"></a></li>
 				</ul>
+				</div>
+				<div class="three columns omega">
+				<ul>
+					<li><a href="#">Art</a></li>
+					<li><a href="#">Film</a></li>
+					<li><a href="#">Theater</a></li>
+					<li><a href="#">Computer</a></li>
+					<li><a href="#"></a></li>
+				</ul>
+				</div>
 			</div>
 			<!-- /End 3/4 -->	
 			<!-- 4/4 -->
-			<div class="four columns omega">
+			<div class="five columns omega">
 				<h5>More</h5>
 				<ul>
+					<li><a href="#">Follow us on Facebook</a></li>
+					<li><a href="#">Follow us on Twitter</a></li>
+					<li><a href="#">Contact</a></li>
 					<li><a href="#">About</a></li>
-					<li><a href="#">Help</a></li>
-					<li><a href="#">Jobs</a></li>
 					<li><a href="#">Terms</a></li>
-					<li><a href="#">Imprint</a></li>
+					<li><a href="#"></a></li>
 				</ul>
 			</div>
 			<!-- /End 4/4 -->			

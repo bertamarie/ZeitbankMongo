@@ -18,11 +18,11 @@ gem "launchy", ">= 2.1.2", :group => :test
 gem "factory_girl_rails", ">= 4.0.0", :group => [:development, :test]
 gem "devise", ">= 2.1.2"  
 gem "nokogiri", ">=1.5.5"
-gem "skeleton-rails"
-gem "mongoid-paperclip", "~> 0.0.8", :require => "mongoid_paperclip"
-gem "tire", "~> 0.5.2"
+gem "skeleton-rails" #responsive layout
+gem "mongoid-paperclip", "~> 0.0.8", :require => "mongoid_paperclip"#images => imagemagick need to be installed
+gem "tire", "~> 0.5.2"#search => elasticsearch need to be installed
 gem "seed_dump", "~> 0.4.2"
-gem "kaminari"
+gem "kaminari" #pagination
 
 group :test do
   gem 'cucumber-rails' , '>=1.3.0'

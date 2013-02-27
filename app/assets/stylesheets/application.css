@@ -78,13 +78,14 @@ hr.partial-bottom{margin-bottom: 20px;}
 /* Basic alignment */
 .align-left{float: left;}
 .align-center{text-align: center;}
-.align-right{float: right}
+.align-right{float: right;}
 
 img.align-left{float: left; margin: 0 15px 12px 0;}
 img.align-center{text-align: center; clear: both; margin: 15px auto; display: block;}
 img.align-right{float: right; margin: 0 0 12px 15px;}
 
-
+a.button.align-right{margin-right: 10px}
+	
 /* #Global Transitions */
 .column, .columns, .row, .project-img img, .sf-menu li, .sf-menu a, a.header-advert img, a.sidebar-advert img {
   	   -moz-transition: all .2s ease-in-out;
@@ -119,7 +120,7 @@ input{ font-size: 11px !important; }
 
 /* #TOPHAT */ 
 #section-tophat{
-	border-bottom: 2px solid #ddd;
+	border-bottom: 1px solid #ddd;
 	background: #333;
 	background: url(images/bg.gif);
 	margin-bottom: 30px;
@@ -139,6 +140,10 @@ input{ font-size: 11px !important; }
 #section-tophat{padding: 0;}
 #section-tophat .columns{
 	margin: 0;
+}
+
+#section-tophat .eight{
+	border-top: 1px solid rgba(255, 255, 255, .05);	
 }
 
 
@@ -226,7 +231,6 @@ h1.title{
 	float: left;
 	background: url("/assets/ring.png") no-repeat center left;
 	background-size: 18px;
-
 }
 h1.title a, h1.title a:hover{
 	padding: 15px 4px 15px 20px;
@@ -238,18 +242,19 @@ a.nav_link{
 	
 	display: block;
 	padding: 7px 10px;
-	width: 35%;
 	float: left;
+	width: 25%;
 	text-align: center;	
-	border-left: 1px solid rgba(255, 255, 255, .05);
+	border-right: 1px solid rgba(255, 255, 255, .05);
 	border-width: 0 1px;
 	font-size: 1.1em;
 }
 a.nav_link.first {
 	margin-left: 5px;
+	border-left: 1px solid rgba(255, 255, 255, .05);
 }
 a.nav_link.last{
-	border-right: 1px solid rgba(255, 255, 255, .05);
+	
 }
 
 
@@ -271,9 +276,10 @@ table tr td{
 	float: left;
 }
 .search-form{
-	float: right;
+	float: left;
 	margin-bottom: 0 !important;
-	padding-top: 8px;	
+	padding-top: 8px;
+	padding-bottom: 8px;	
 }
 .search-button{
 	margin: 5px 0 0 3px;
@@ -379,7 +385,7 @@ h3 span{
 }
 .flexslider .slides div{
 	margin: 20px auto;
-	max-width: 500px;
+	max-width: 80%;
 	font-size: 1.1em;
 }
 
@@ -621,6 +627,24 @@ input[type="url"]:focus, input[type="number"]:focus {
 	padding: 5px;
 }
 
+ @media only screen and (min-width: 768px) and (max-width: 959px) {
+	#section-tophat .eight{width: 100%}
+}
+
+/*Tooltip*/
+a.tooltip {text-decoration:none; position: relative}
+.tooltip span.tooltip_text{display:none;}
+.tooltip:hover span.tooltip_text{
+	display:block;
+	position: absolute; 
+	bottom: 45px;
+	right: -5px	;
+	width: 100%;
+	background: #000;
+	color: #EEE;
+	border-radius: 3px;
+	padding: 5px;
+}
 
 
 
