@@ -630,3 +630,13 @@ Caused by: java.net.ConnectException: connection timed out
 [2013-02-27 02:04:24,834][INFO ][node                     ] [Golem] {0.20.1}[1623]: stopped
 [2013-02-27 02:04:24,834][INFO ][node                     ] [Golem] {0.20.1}[1623]: closing ...
 [2013-02-27 02:04:24,848][INFO ][node                     ] [Golem] {0.20.1}[1623]: closed
+[2013-02-27 12:16:51,683][INFO ][node                     ] [Master Order] {0.20.1}[728]: initializing ...
+[2013-02-27 12:16:51,719][INFO ][plugins                  ] [Master Order] loaded [], sites []
+[2013-02-27 12:16:57,890][INFO ][node                     ] [Master Order] {0.20.1}[728]: initialized
+[2013-02-27 12:16:57,891][INFO ][node                     ] [Master Order] {0.20.1}[728]: starting ...
+[2013-02-27 12:16:58,173][INFO ][transport                ] [Master Order] bound_address {inet[/0:0:0:0:0:0:0:0%0:9300]}, publish_address {inet[/192.168.2.3:9300]}
+[2013-02-27 12:17:01,446][INFO ][cluster.service          ] [Master Order] new_master [Master Order][i6-t1aQ9QgaLG906-STvEQ][inet[/192.168.2.3:9300]], reason: zen-disco-join (elected_as_master)
+[2013-02-27 12:17:01,564][INFO ][discovery                ] [Master Order] elasticsearch/i6-t1aQ9QgaLG906-STvEQ
+[2013-02-27 12:17:01,604][INFO ][http                     ] [Master Order] bound_address {inet[/0:0:0:0:0:0:0:0%0:9200]}, publish_address {inet[/192.168.2.3:9200]}
+[2013-02-27 12:17:01,605][INFO ][node                     ] [Master Order] {0.20.1}[728]: started
+[2013-02-27 12:17:03,440][INFO ][gateway                  ] [Master Order] recovered [1] indices into cluster_state
